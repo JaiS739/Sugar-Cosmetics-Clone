@@ -507,7 +507,7 @@ function addToCart(el){
     console.log(el);
     cartArr.push(el)
     countProd++;
-    localStorage.setItem("prod",JSON.stringify(cartArr));
+    localStorage.setItem("AddToCartProduct",JSON.stringify(cartArr));
     localStorage.setItem("count",JSON.stringify(countProd));
     window.location.href = "cart.html"
 }
