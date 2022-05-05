@@ -1,0 +1,651 @@
+@charset 'UTF-8';
+/* Slider */
+.slick-loading .slick-list
+{
+    background: #fff url('./ajax-loader.gif') center center no-repeat;
+}
+
+/* Icons */
+@font-face
+{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+
+    src: url('./fonts/slick.eot');
+    src: url('./fonts/slick.eot?#iefix') format('embedded-opentype'), url('./fonts/slick.woff') format('woff'), url('./fonts/slick.ttf') format('truetype'), url('./fonts/slick.svg#slick') format('svg');
+}
+/* Arrows */
+.slick-prev,
+.slick-next
+{
+    font-size: 0;
+    line-height: 0;
+
+    position: absolute;
+    top: 50%;
+    left :90%;
+    right: -90%;
+    
+    
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+
+    cursor: pointer;
+
+    color: transparent;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover,
+.slick-prev:focus,
+.slick-next:hover,
+.slick-next:focus
+{
+    color: transparent;
+    outline: none;
+    background: transparent;
+}
+.slick-prev:hover:before,
+.slick-prev:focus:before,
+.slick-next:hover:before,
+.slick-next:focus:before
+{
+    opacity: 1;
+}
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before
+{
+    opacity: .25;
+}
+
+.slick-prev:before,
+.slick-next:before
+{
+    font-family: 'slick';
+    font-size: 20px;
+    line-height: 1;
+
+    opacity: .75;
+    color: white;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.slick-prev
+{
+    left: -25px;
+}
+[dir='rtl'] .slick-prev
+{
+    right: -25px;
+    left: auto;
+}
+.slick-prev:before
+{
+    content: '←';
+}
+[dir='rtl'] .slick-prev:before
+{
+    content: '→';
+}
+
+.slick-next
+{
+    right: -55px;
+}
+[dir='rtl'] .slick-next
+{
+    right: auto;
+    left: -25px;
+}
+.slick-next:before
+{
+    content: '→';
+}
+[dir='rtl'] .slick-next:before
+{
+    content: '←';
+}
+
+/* Dots */
+.slick-dotted.slick-slider
+{
+    margin-bottom: 30px;
+}
+
+.slick-dots
+{
+    position: absolute;
+    bottom: -25px;
+
+    display: block;
+
+    width: 100%;
+    padding: 0;
+    margin: 0;
+
+    list-style: none;
+
+    text-align: center;
+}
+.slick-dots li
+{
+    position: relative;
+
+    display: inline-block;
+
+    width: 20px;
+    height: 20px;
+    margin: 0 5px;
+    padding: 0;
+
+    cursor: pointer;
+}
+.slick-dots li button
+{
+    font-size: 0;
+    line-height: 0;
+
+    display: block;
+
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+
+    cursor: pointer;
+
+    color: transparent;
+    border: 0;
+    outline: none;
+    background: transparent;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus
+{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before
+{
+    opacity: 1;
+}
+.slick-dots li button:before
+{
+    font-family: 'slick';
+    font-size: 12px;
+    line-height: 20px;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 20px;
+    height: 20px;
+
+    content: '•';
+    text-align: center;
+
+    opacity: .25;
+    color: black;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before
+{
+    opacity: .75;
+    color: black;
+}
+
+
+body{
+    background-color: #f5f5f5;
+    /* margin: 30px; */
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* top slider bar */
+
+.slider{
+    width: 100%;
+    margin: auto;
+    /* border: 1px solid blue; */
+   
+}
+
+.slide{
+    /* border: 1px solid red; */
+    text-align: center;
+    
+    margin: auto;
+   
+}
+.slider>.slide>img{
+    
+    width: 100%;
+    margin: auto;
+    /* border: 2px solid green; */
+}
+
+
+
+/* refer section starts here */
+
+/* common h1 */
+h1{
+    font-weight: lighter;
+    text-align: center;
+}
+
+.REFER_YOUR_FRIENDS{
+    text-align: center;
+}
+
+.REFER_YOUR_FRIENDS>a>img{
+    width: 93%;
+
+}
+/* refer section ends here */
+
+
+/* METTLE PRIMING BALM starts here */
+
+.METTLE_PRIMING_BALM{
+    text-align: center;
+}
+
+
+.METTLE_PRIMING_BALM>a>iframe{
+    
+    width: 1182px;
+    height : 415px;
+}
+
+/* * METTLE PRIMING BALM starts here */
+
+
+/* BESTSELLERS starts here */
+
+.BESTSELLERS{
+    width: 85%;
+    height: 250px;
+    margin: auto;   
+    
+} 
+
+.best_slide{
+    
+    /* height: 90%; */
+    width: 90%;
+    /* border: 1px solid red; */
+    background-color: white;
+    /* margin-bottom: 100px; */
+    margin: 0px 15px 100px 15px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+   
+}
+
+
+
+.best_slide>a>img{
+    
+    width: 80%;
+    /* border: 1px solid blue;     */
+    margin: auto;
+    padding: 0 20px;
+} 
+
+
+p{
+    text-align: center;
+    font-size: 14px;
+    font-weight: bolder;
+    
+}
+
+.addTOCart{
+    width: 100%;
+    color: white;    
+    background-color: black;
+    font-weight: 100;   
+    font-size: 15px;
+    cursor: pointer;
+    padding: 8px 20px;
+}
+
+/* BESTSELLERS starts here */
+
+/* // <!-- QUICK BEAUTY TIPS WITH SUGAR starts here --> */
+
+#QUICKBEAUTY>h1{
+    margin-top: 220px;
+}
+
+
+.quickBeautySlide{
+    width: 100%;
+    margin-top: 10px;
+
+}
+
+.quickBeautySlide>a>img{
+    width: 100%;
+    /* border: 1px solid red; */
+}
+/* // <!-- QUICK BEAUTY TIPS WITH SUGAR ends here --> */
+
+
+
+/* //  HOT_DEALS starts here */
+
+.HOT_DEALS{
+    width: 100%;
+    margin: auto;
+    height: 200px;
+}
+
+
+.hotdeals{
+    width: 100%;    
+    background-color: white;    
+    margin: 0px 15px 100px 15px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+
+.hotdeals>a>img{
+    width: 100%;
+    /* border: 1px solid blue;     */
+    margin: auto;
+    
+}
+
+/* //  HOT_DEALS ends here */
+
+
+/* HOT_DEALS starts here*/
+
+.ULTIMATE_MAKEUP_QUIZ{
+    text-align: center;
+    width: 100%;    
+}
+
+.ULTIMATE_MAKEUP_QUIZ>h1{
+    margin-top: 130px;
+    /* border: 1px solid blue; */
+}
+
+
+.ULTIMATE_MAKEUP_QUIZ>a>img{
+    margin-top: 0px;
+    width: 100%;
+    /* border: 1px solid red; */
+}
+
+/* HOT_DEALS ends here*/
+
+
+/* SUPER_SAVERS starts here */
+
+.SUPER_SAVERS{
+    width: 85%;
+    height: 250px;
+    margin: auto;   
+}
+
+
+.super_slide{
+     /* height: 90%; */
+     width: 90%;
+     /* border: 1px solid red; */
+     background-color: white;
+     /* margin-bottom: 100px; */
+     margin: 0px 15px 100px 15px;
+     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+
+.super_slide>a>img{
+    
+    width: 80%;
+    /* border: 1px solid blue;     */
+    margin: auto;
+    padding: 0 20px;
+} 
+
+
+.addTOCart_2{
+    width: 100%;
+    color: white;    
+    background-color: black;
+    font-weight: 100;   
+    font-size: 15px;
+    cursor: pointer;
+    padding: 8px 20px;
+}
+
+/* SUPER_SAVERS ENDS here */
+
+
+/* // <!-- TOP PICKS OF THE WEEK starts here --> */
+
+.PICK_OF_THE_WEEK{
+    width: 100%;
+    margin: auto;
+    height: 200px;
+    /* margin-top: 150px; */
+    
+}
+
+.pick_slide{
+    width: 100%;    
+    background-color: white;    
+    margin: 0px 15px 100px 15px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.pick_slide>a>img{
+    width: 100%;
+    /* border: 1px solid blue;     */
+    margin: auto;    
+}
+
+#PICKOFTHEWEEK{
+    margin-top: 200px;
+}
+
+/* // <!-- TOP PICKS OF THE WEEK ends here --> */
+
+
+/* THIS_OR_THAT starts here */
+
+.this_or_that{
+    display: flex;   
+    width: 93%;
+    margin: auto;
+    justify-content: space-evenly;
+    gap: 50px;
+
+}
+.this_or_that>div{
+   
+    width: 90%;
+    
+}
+
+
+.this_or_that>div>img{
+    width: 100%;
+}
+
+#thisOrThat{
+   
+    margin-top: 150px;
+}
+
+
+
+/* just starts here */
+
+.JUST_IN{
+    width: 85%;
+    height: 250px;
+    margin: auto;   
+}
+
+
+.just_slide{
+     /* height: 90%; */
+     width: 90%;
+     /* border: 1px solid red; */
+     background-color: white;
+     /* margin-bottom: 100px; */
+     margin: 0px 15px 100px 15px;
+     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+
+.just_slide>a>img{
+    
+    width: 80%;
+    /* border: 1px solid blue;     */
+    margin: auto;
+    padding: 0 20px;
+} 
+
+
+.addTOCart_3{
+    width: 100%;
+    color: white;    
+    background-color: black;
+    font-weight: 100;   
+    font-size: 15px;
+    cursor: pointer;
+    padding: 8px 20px;
+}
+
+/* just ends here */
+
+
+/* // <!-- SUGAR BEAUTY BLOG starts here --> */
+
+
+.SUGAR_BLOG{
+    width: 100%;
+    margin: auto;
+    height: 200px;
+    /* margin-top: 150px; */
+    
+}
+
+.blog_slide{
+    width: 100%;    
+    background-color: white;    
+    margin: 0px 15px 100px 15px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+.blog_slide>a>img{
+    width: 100%;
+    /* border: 1px solid blue;     */
+    margin: auto;    
+}
+
+#sugar_blog{
+    margin-top: 200px;
+}
+
+/* // <!-- SUGAR BEAUTY BLOG ends here --> */
+
+
+
+/* // <!-- SKINCARE BASICS starts here --> */
+
+.SKINCARE_BASICS{
+    width: 85%;
+    height: 250px;
+    margin: auto;   
+    /* margin-top: 190px; */
+}
+
+
+.basic_slide{
+     /* height: 90%; */
+     width: 90%;
+     /* border: 1px solid red; */
+     background-color: white;
+     /* margin-bottom: 100px; */
+     margin: 0px 15px 100px 15px;
+     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+
+.basic_slide>a>img{
+    
+    width: 80%;
+    /* border: 1px solid blue;     */
+    margin: auto;
+    padding: 0 20px;
+} 
+
+
+.addTOCart_4{
+    width: 100%;
+    color: white;    
+    background-color: black;
+    font-weight: 100;   
+    font-size: 15px;
+    cursor: pointer;
+    padding: 8px 20px;
+}
+
+#skincarebasics{
+    margin-top: 210px;
+}
+/* // <!-- SKINCARE BASICS starts here --> */
+
+
+
+/* <!-- EXPLORE starts here --> */
+
+
+
+.EXPLORE{
+    width: 100%;
+    margin: auto;
+    height: 200px;
+   
+}
+
+
+.explore_slide{
+    width: 100%;    
+    background-color: white;    
+    margin: 0px 15px 100px 15px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+}
+
+
+.explore_slide>a>img{
+    width: 100%;
+    /* border: 1px solid blue;     */
+    margin: auto;
+    
+}
+
+
+#explore{
+    margin-top: 210px;
+}
+
