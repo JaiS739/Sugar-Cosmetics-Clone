@@ -651,6 +651,5 @@ function addToCart(el){
     cartArr.push(el)
     countProd++;
     localStorage.setItem("AddToCartProduct",JSON.stringify(cartArr));
-    localStorage.setItem("count",JSON.stringify(countProd));
-    window.location.href = "cart.html"
+    localStorage.setItem("Total_count",JSON.stringify(countProd));
 }
