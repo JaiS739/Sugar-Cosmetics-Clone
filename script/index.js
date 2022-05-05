@@ -1,13 +1,4 @@
 
-
-
-
-
-
-
-
-
-
 let arr1 =[
     {
         img :"https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/2726f64a-3b5b-4ca9-b066-2ed3d9245582.gif" 
