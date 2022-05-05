@@ -1,0 +1,144 @@
+
+body {
+    font-family: "Roboto", sans-serif;
+  }
+  h4 {
+    /* text-align: center; */
+    margin-left: 160px;
+    font-size: 18px;
+  }
+
+  #cartcontainer {
+    width: 80%;
+    margin: auto;
+    /* height: 600px; */
+    display: flex;
+    /* border: 1px solid red; */
+    justify-content: space-between;
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    border-radius: 15px;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  #cartcontent {
+    width: 67%;
+    border: 1px solid red;
+    padding: 10px;
+    
+    
+    margin-top: 20px;
+    border-radius: 15px;
+  }
+
+  #cartprice {
+    width: 30%;
+    /* height: 415px; */
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    margin-top: 20px;
+    /* border:1px solid red; */
+  }
+
+  #innercartprice {
+    width: 85%;
+    height: 360px;
+    margin: auto;
+    /* border:1px solid red; */
+  }
+
+  .subtotal {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  hr {
+    margin: 10px 0px 10px 0px;
+  }
+  /* enter discount code css */
+  input {
+    height: 28px;
+    width: 98.25%;
+    margin-top: 11px;
+    margin-bottom: 25px;
+  }
+  label {
+    font-weight: bold;
+    font-size: 16px;
+    color: #5a5858;
+  }
+
+  #submit2 {
+    width: 45%;
+    border: #444444;
+    background-color: #444444;
+    color: white;
+    height: 35px;
+    cursor: pointer;
+  }
+
+  #submit2:hover {
+    border: #dd0285;
+    background-color: #dd0285;
+  }
+  /* enter discount code css  completed*/
+  /* proceed to checkout css */
+  #checkoutbtn {
+    width: 100%;
+    height: 100px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+      rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+    background-color: #fafafa;
+    /* border: 1px solid red; */
+    margin-top: 38px;
+  }
+
+  #checkout {
+    width: 85.5%;
+    height: 40px;
+    color: white;
+    border: #dd0285;
+    background-color: #030303;
+    margin-left: 28px;
+    margin-top: 30px;
+    cursor: pointer;
+  }
+
+  #checkout:hover {
+    border: #444444;
+    background-color: #444444;
+  }
+  /* proceed to checkout css completed */
+  /* image top css */
+ 
+
+  #play {
+    display: block;
+    position: relative;
+    margin-top: 14px;
+    margin-left: 86.5%;
+    height: 47px;
+    cursor: pointer;
+    z-index: 2;
+  }
+  /* image top css completed */
+  /* scroll to top css  */
+  #btnScrollToTop {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #dd0285;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+    color: white;
+    cursor: pointer;
+    border: none;
+    outline: none;
+  }
+
+  #btnScrollToTop:active {
+    background-color: #c20978;
+  }
