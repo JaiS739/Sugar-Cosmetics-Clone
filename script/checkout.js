@@ -50,5 +50,5 @@ function orderfun(){
  //    document.querySelector("#cvv").value="";
  //    document.querySelector("#date").value="";
  //    document.querySelector("#name").value="";
- window.location.href="receipt.html";
+ window.location.href="recipt.html";
 }
