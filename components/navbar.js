@@ -12,7 +12,7 @@ let navbar = ()=>{
           class="search_input"
           placeholder='Try "Liquid Lipstick"'
         />
-        <a href="" class="search_icon">Search</a>
+        <a href="lips.html" class="search_icon">Search</a>
       </div>
       <div class="login_btn">
         <img
@@ -21,7 +21,7 @@ let navbar = ()=>{
         />
 
         <div onclick="window.location.href='login.html'">LOGIN/</div>
-        <div onclick="window.location.href='signup.html'">SIGN UP</div>
+        <div onclick="window.location.href='login.html'">SIGN UP</div>
       </div>
 
 
