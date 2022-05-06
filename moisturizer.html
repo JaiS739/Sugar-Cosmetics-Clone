@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <!-- <link rel="stylesheet" href="home.css" /> -->
+    <link rel="stylesheet" href="css/moisturizer.css">
+
+ 
+</head>
+<body>
+    
+    <!-- top part start -->
+    <div id="top-part">
+
+        <div id="first">
+            <div>
+                <img src="https://in.sugarcosmetics.com/desc-images/breadcrumb_home.svg" alt="">
+                <p>/ Skin care products  <span style="font-weight: 600;">/ Face moisturizer</span></p>     
+            </div>
+            <div>
+                <img src="https://in.sugarcosmetics.com/desc-images/filterIcon.png" alt="">
+                <p>Filters</p>
+            </div>
+            <div>
+                <img src="https://in.sugarcosmetics.com/desc-images/sortIcon.png" alt="">
+                <p>Sort</p>
+            </div>   
+        </div>
+        
+        <div id="second">
+            <p>Face Moisturizer<span style="color: #6C757D;">- <span></span> items</span></p>   
+        </div>
+
+    </div>
+  
+    <div id="productlist"></div>
+   
+  </div>
+</body>
+</html>
+
+<script>
+    var productsDetails = [
+    {
+        number: "",
+        shadeImg: "",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/moisturiser.jpg?v=1626968292",
+        productName: "AQUAHOLIC PRIMING MOISTURIZER",
+        price: "Rs.499",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        rating: "4.8(127)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "ADD TO CART"
+    },
+    {
+        number: "",
+        shadeImg: "",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-citrus-got-real-daily-moisturizer-28038347292755.jpg?v=1619155748",
+        productName: "CIRTUS REAL DAILY MOIST...",
+        price: "Rs.499",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        rating: "4.9(34)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "ADD TO CART"
+    },
+    {
+        number: "",
+        shadeImg: "",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/Hyderattingkit.jpg?v=1626968294",
+        productName: "AQUAHOLIC HYDRATING STICK",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        price: "Rs.899",
+        rating: "4.8(44)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "ADD TO CART"
+    },
+    {
+        number: "12",
+        shadeImg: "https://in.sugarcosmetics.com/ic_multiple_shades_opt2.png",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-bling-leader-illuminating-moisturizer-13644982681683.jpg?v=1619115847",
+        productName: "BLIND LEADER ILLUMINATING MO...",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        price: "Rs.499",
+        rating: "4.7(130)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "SELECT SHADE"
+    }  ,
+    
+    {
+        number: "10",
+        shadeImg: "https://in.sugarcosmetics.com/ic_multiple_shades_opt2.png",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-bling-leader-illuminating-moisturizer-13644982681683.jpg?v=1619115847",
+        productName: "BLIND LEADER ILLUMINATING MO...",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        price: "Rs.399",
+        rating: "4.5(120)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "SELECT SHADE"
+    }   
+
+
+];
+
+    var count = 0
+
+    productsDetails.map(function(elem){
+
+        var mainDiv = document.createElement("div")
+        mainDiv.setAttribute("class", "container")
+        count++
+
+        var divForShade = document.createElement("div")
+        divForShade.setAttribute("class", "div_for_shade")
+        var numberOfShade = document.createElement("p")
+        numberOfShade.innerText = elem.number;
+        var shadeImg = document.createElement("img")
+        shadeImg.setAttribute("src", elem.shadeImg)
+        divForShade.append(numberOfShade, shadeImg)
+
+        var productImg = document.createElement("img")
+        productImg.setAttribute("src", elem.productImg)
+        productImg.setAttribute("class", "productImg")
+
+        var productName = document.createElement("h6")
+        productName.innerText = elem.productName
+        productName.setAttribute("class", "productName")
+
+        var price = document.createElement("p")
+        price.innerText = elem.price
+        price.setAttribute("class", "price")
+
+        var divForStar = document.createElement("div")
+        divForStar.style.display = "flex"
+        divForStar.style.backgroundColor = "#ffffff"
+        divForStar.style.justifyContent = "center"
+        var star = document.createElement("img")
+        star.setAttribute("src", elem.star)
+        star.style.height = "16px"
+        star.style.backgroundColor = "#ffffff"
+        var rating = document.createElement("p")
+        rating.innerText = elem.rating
+        rating.setAttribute("class", "rating")
+        divForStar.append(star, rating)
+
+        var divHover = document.createElement("div")
+        divHover.setAttribute("class", "div_hover")
+        var div_heart = document.createElement("div")
+        var heart = document.createElement("img")
+        heart.setAttribute("src", elem.heartImg)
+        div_heart.append(heart)
+        var div_select = document.createElement("div")
+        var select = document.createElement("p")
+        select.innerText = elem.select
+        div_select.append(select)
+        divHover.append(div_heart, div_select)
+
+        mainDiv.addEventListener("mouseover", function(){
+            divHover.style.display = "flex"
+        })
+
+        mainDiv.addEventListener("mouseleave", function(){
+            divHover.style.display = "none"
+        })
+
+        mainDiv.append(divForShade, productImg, productName, price, divForStar, divHover)
+
+        document.querySelector("#productlist").append(mainDiv)
+    })
+
+    document.querySelector("#second>p>span>span").innerText = count
+</script>   
+

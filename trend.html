@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/trend.css">
+ 
+</head>
+<body>
+    <!-- top img start-->
+    <!-- <div id="top-img">
+        <img src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/790c4f13-e58f-4bff-877a-c22d6d348364.jpg" alt="">
+    </div> -->
+    <!-- top img ends -->
+
+
+    <!-- top part start -->
+    <div id="top-part">
+
+        <div id="first">
+            <div>
+                <img src="https://in.sugarcosmetics.com/desc-images/breadcrumb_home.svg" alt="">
+                <p>/ Makeup <span style="font-weight: 600;"></span></p>     
+            </div>
+            <div>
+                <img src="https://in.sugarcosmetics.com/desc-images/filterIcon.png" alt="">
+                <p>Filters</p>
+            </div>
+            <div>
+                <img src="https://in.sugarcosmetics.com/desc-images/sortIcon.png" alt="">
+                <p>Sort</p>
+            </div>
+        </div>
+        
+        <div id="second">
+            <p>Makeup<span style="color: #6C757D;">- <span></span> items</span></p>   
+        </div>
+
+    </div>
+    <!-- top part end -->
+
+
+    <!-- products list start-->
+    <div id="productlist"></div>
+    <!-- products list end -->
+
+
+    <!-- read more start -->
+    <div id="parentREADMOREABOUT">
+        <div id="READMOREABOUT">READ MORE ABOUT</div>
+        <div id="READMOREABOUTdiv"></div>
+    </div>
+    <!-- read more end -->
+    <!-- <div id="footer"></div> -->
+</body>
+</html>
+
+<script>
+    // Product List start
+    var productsDetails = [
+    {
+        number: "",
+        shadeImg: "",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/01_d6ffec78-c2b6-4466-8672-233fee0285a8.jpg?v=1644394232",
+        productName: "MATTE AS HELL CRAYON",
+        price: "Rs.799",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        rating: "4.8(843)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "CHOOSE PRODUCTS"
+    },
+    {
+        number: "",
+        shadeImg: "",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-contour-de-force-mini-blush-01-peach-peak-soft-peach-pink-11020203884627.jpg?v=1619102626",
+        productName: "COUNTOUR DE FORCE MINI",
+        price: "Rs.349",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        rating: "4.9(125)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "CHOOSE PRODUCTS"
+    },
+    {
+        number: "",
+        shadeImg: "",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/1_6f55bcac-3e42-4253-88ee-cec0fa43c62a.jpg?v=1645608270",
+        productName: "MATTE ATTACK",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        price: "Rs.699",
+        rating: "4.7(314)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "CHOOSE PRODUCTS"
+    },
+    {
+        number: "36",
+        shadeImg: "https://in.sugarcosmetics.com/ic_multiple_shades_opt2.png",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/1_ef579f2e-602e-4d2f-bed2-bf0efdf4f184.jpg?v=1644325813",
+        productName: "SMUDGE ME NOT LIQUID",
+        price: "Rs.499",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        rating: "4.8(313)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "SELECT SHADE"
+    },
+    {
+        number: "17",
+        shadeImg: "https://in.sugarcosmetics.com/ic_multiple_shades_opt2.png",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/1_51afaa84-af89-42b5-bdb8-a51b01257bc0.jpg?v=1639582607",
+        productName: "CONTOUR DE FORCE FACE",
+        price: "Rs.799",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        rating: "4.7(266)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "SELECT SHADE"
+    },
+    {
+        number: "52",
+        shadeImg: "https://in.sugarcosmetics.com/ic_multiple_shades_opt2.png",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-contour-de-force-mini-bronzer-01-taupe-topper-cool-toned-brown-gray-undertone-11020228624467.jpg?v=1619102678",
+        productName: "CONTOUR DE FORCE FACE",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        price: "Rs.399",
+        rating: "4.7(58)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "SELECT SHADE"
+    },
+    {
+        number: "",
+        shadeImg: "",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/1_df1e9403-ae9d-430c-8226-622d21c4743d.jpg?v=1640676422",
+        productName: "ARCH ARRIVAL BROW",
+        price: "Rs.499",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        rating: "4.8(135)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "CHOOSE PRODUCT"
+    },
+    {
+        number: "",
+        shadeImg: "",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/AirKissPowderPoweredByImagesArtboard1.jpg?v=1644813116",
+        productName: "AIR KISS POWER LIPSTICK",
+        price: "Rs.499",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        rating: "5(1)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "CHOOSE PRODUCT"
+    },
+    {
+        number: "",
+        shadeImg: "",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/1_e9355d54-6ddb-4aa4-bdfc-176a676db886.jpg?v=1639983555",
+        productName: "METTLE SATIN LIPSTICK",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        price: "Rs.499",
+        rating: "4.9(79)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "CHOOSE PRODUCT"
+    },
+    {
+        number: "",
+        shadeImg: "",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-matte-as-hell-crayon-lipstick-minis-set-28270316945491.jpg?v=1623073051",
+        productName: "BASE OF GLORY PORE...",
+        price: "Rs.799",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        rating: "4.8(228)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "CHOOSE PRODUCT"
+    },
+    {
+        number: "5",
+        shadeImg: "https://in.sugarcosmetics.com/ic_multiple_shades_opt2.png",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/Value-Set-WBG-1.jpg?v=1642089034",
+        productName: "BEGINNERS MAKEUP ",
+        price: "Rs.999",
+        star: " ",
+        rating: " ",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "SELECT SHADE"
+    },
+    {
+        number: "10",
+        shadeImg: "https://in.sugarcosmetics.com/ic_multiple_shades_opt2.png",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/01_59809bd6-49ef-4c6b-b262-47002bedc963.jpg?v=1639755559",
+        productName: "BLEND THE RULES...",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        price: "Rs.1199",
+        rating: "4.8(87)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "SELECT SHADE"
+    },
+    {
+        number: "10",
+        shadeImg: "https://in.sugarcosmetics.com/ic_multiple_shades_opt2.png",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-time-to-shine-lip-gloss-13905851580499.jpg?v=1619116676",
+        productName: "TIME TO SHINE LIP GLOSS",
+        price: "Rs.499",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        rating: "4.5(49)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "SELECT SHADE"
+    },
+    {
+        number: "10",
+        shadeImg: "https://in.sugarcosmetics.com/ic_multiple_shades_opt2.png",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-mettle-matte-lipstick-01-athena-red-terracotta-13200497737811.jpg?v=1619110264",
+        productName: "METTLE MATTE LIPSTICK",
+        price: "Rs.1099",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        rating: "4.8(24)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "SELECT SHADE"
+    },
+    {
+        number: "",
+        shadeImg: "",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/1_529c20ee-c872-4029-9702-8580d7b9a66f.jpg?v=1640178644",
+        productName: "ACE OF FACE FOUNDATION",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        price: "Rs.999",
+        rating: "4.8(458)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "CHOOSE PRODUCT"
+    },
+    {
+        number: "",
+        shadeImg: "",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-lipping-on-the-edge-lip-liner-01-taffeta-terracotta-13278188568659.jpg?v=1619109027",
+        productName: "LIPPING ON THE EDGE LIP",
+        price: "Rs.499",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        rating: "4.8(50)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "CHOOSE PRODUCT"
+    },
+    {
+        number: "7",
+        shadeImg: "https://in.sugarcosmetics.com/ic_multiple_shades_opt2.png",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-it-s-a-pout-time-vivid-lipstick-01-the-big-bang-berry-wine-13204815937619.jpg?v=1619100487",
+        productName: "IT'S A-POUT TIME! VIVID ....",
+        price: "Rs.419",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        rating: "4.7(459)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "SELECT SHADE"
+    },
+    {
+        number: "",
+        shadeImg: "",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-eye-warned-you-so-double-matte-eyeliner-01-black-swan-black-13954562654291.jpg?v=1619116881",
+        productName: "EYE WARNED YOU SO!..",
+        price: "Rs.699",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        rating: "4.8(51)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "CHOOSE PRODUCT"
+    },
+    {
+        number: "",
+        shadeImg: "",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-contour-de-force-mini-blush-02-pink-pinnacle-deep-rose-12785043669075.jpg?v=1619102659",
+        productName: "CONTOUR DE FORCE MINI..",
+        price: "Rs.349",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        rating: "5(2)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "CHOOSE PRODUCT"
+    },
+    {
+        number: "10",
+        shadeImg: "https://in.sugarcosmetics.com/ic_multiple_shades_opt2.png",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-face-fwd-blush-stick-01-coral-climax-bright-coral-13825375273043.jpg?v=1619116614",
+        productName: "FACE FWD >> BLUSH STICK",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        price: "Rs.799",
+        rating: "4.9(21)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "SELECT SHADE"
+    },
+    {
+        number: "",
+        shadeImg: "",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-drop-the-base-serum-foundation-10959991767123.jpg?v=1619107852",
+        productName: "DROPE THE BASE SERUM ",
+        price: "Rs.450",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        rating: "4.7(203)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "CHOOSE PRODUCT"
+    },
+    {
+        number: "",
+        shadeImg: "",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/1_1da9dee5-9c2e-4135-994c-9b7d2ca23e6b.jpg?v=1641915296",
+        productName: "NOTHING ELSE MATTER",
+        price: "Rs.499",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        rating: "4.8(147)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "CHOOSE PRODUCT"
+    },
+    {
+        number: "20",
+        shadeImg: "https://in.sugarcosmetics.com/ic_multiple_shades_opt2.png",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-mettle-liquid-lipstick-01-lyra-cool-toned-plum-13200549380179.jpg?v=1619110238",
+        productName: "METTLE LIQUID LIPSTICK",
+        price: "Rs.599",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        rating: "4.9(70)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "SELECT SHADE"
+    },
+    {
+        number: "34",
+        shadeImg: "https://in.sugarcosmetics.com/ic_multiple_shades_opt2.png",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/1CREATIVEIMAGE01.jpg?v=1639496051",
+        productName: "BORN TO WING GEL EYELINER",
+        price: "Rs.599",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        rating: "4.7(118)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "SELECT SHADE"
+    },
+    {
+        number: "12",
+        shadeImg: "https://in.sugarcosmetics.com/ic_multiple_shades_opt2.png",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-dream-cover-spf15-mattifying-compact-10-latte-12775602356307.jpg?v=1619106501",
+        productName: "DREAM COVER SPF15..",
+        price: "Rs.499",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        rating: "4.7(183)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "SELECT SHADE"
+    },
+    {
+        number: "10",
+        shadeImg: "https://in.sugarcosmetics.com/ic_multiple_shades_opt2.png",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-twist-and-shout-fadeproof-kajal-01-black-velvet-black-14255312109651.jpg?v=1619100296",
+        productName: "TWIST AND SHOUT...",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        price: "Rs.399",
+        rating: "4.6(111)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "SELECT SHADE"
+    },
+    {
+        number: "10",
+        shadeImg: "https://in.sugarcosmetics.com/ic_multiple_shades_opt2.png",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-lash-mob-limitless-mascara-01-black-with-a-bang-black-12775589871699.jpg?v=1619100706",
+        productName: "LASH MOB LIMITLESS",
+        price: "Rs.799",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        rating: "4.7(32)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "SELECT SHADE"
+    },
+    {
+        number: "10",
+        shadeImg: "https://in.sugarcosmetics.com/ic_multiple_shades_opt2.png",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-goddess-of-flawless-spf30-bb-cream-07-vanilla-latte-fair-12796432941139.jpg?v=1619114695",
+        productName: "GODDESSS OF FLAELESS",
+        price: "Rs.699",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        rating: "4.7(100)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "SELECT SHADE"
+    },
+    {
+        number: "",
+        shadeImg: "",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-all-set-to-go-banana-powder-13289662218323.jpg?v=1619115199",
+        productName: "ALL SET TO GO BANANA",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        price: "Rs.599",
+        rating: "4.8(104)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "CHOOSE PRODUCT"
+    },
+    {
+        number: "10",
+        shadeImg: "https://in.sugarcosmetics.com/ic_multiple_shades_opt2.png",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-limited-edition-nothing-else-matter-longwear-lipstick-15288678613075.jpg?v=1619115170",
+        productName: "LIMITED EDITION",
+        price: "Rs.599",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        rating: "4.9(19)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "SELECT SHADE"
+    },
+    {
+        number: "",
+        shadeImg: "",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-gloss-boss-24hr-eyeliner-01-back-in-black-black-12771395436627_a805d7b4-0863-4ae0-9f15-a2292ae9aa93.jpg?v=1632210594",
+        productName: "GLOSS BOSS 24HRS..",
+        price: "Rs.499",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        rating: "4.8(9)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "CHOOSE PRODUCT"
+    },
+    {
+        number: "",
+        shadeImg: "",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/1_aab4d2fb-22ff-4c06-b906-608c50c2cce5.jpg?v=1639582378",
+        productName: "STROKE OF GENIUS..",
+        price: "Rs.499",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        rating: "4.8(75)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "CHOOSE PRODUCT"
+    },
+    {
+        number: "",
+        shadeImg: "",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-eye-told-you-so-smudgeproof-eyeliner-01-black-swan-black-13760408584275.jpg?v=1619116364",
+        productName: "EYE TOLD YOU SO!",
+        price: "Rs.699",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        rating: "4.7(31)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "CHOOSE PRODUCT"
+    },
+    {
+        number: "",
+        shadeImg: "",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-set-the-tone-tinted-powder-10-latte-light-13444641390675.jpg?v=1619115262",
+        productName: "SET THE TONE TINTED P....",
+        price: "Rs.699",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        rating: "4.7(63)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "CHOOSE PRODUCT"
+    },
+    {
+        number: "",
+        shadeImg: "",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-the-most-eligiblur-smoothing-primer-28122626162771.jpg?v=1619115330",
+        productName: "THE MOST ELIGIBLUR",
+        price: "Rs.799",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        rating: "4.8(35)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "CHOOSE PRODUCT"
+    },
+    {
+        number: "",
+        shadeImg: "",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-plush-crush-creme-crayon-13974621519955.jpg?v=1619117067",
+        productName: "PLUSH CRUSH CREME",
+        price: "Rs.349",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        rating: "4.7(127)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "CHOOSE PRODUCT"
+    },
+    {
+        number: "",
+        shadeImg: "",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-face-fwd-highlighter-stick-01-champagne-champion-champagne-gold-13825399652435.jpg?v=1619116634",
+        productName: "FACE FWD",
+        price: "Rs.799",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        rating: "4.7(24)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "CHOOSE PRODUCT"
+    },
+    {
+        number: "",
+        shadeImg: "",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-seal-the-show-lip-primer-14162590433363.jpg?v=1619106825",
+        productName: "SEAL THE SHOW LIP PRIMER",
+        price: "Rs.599",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        rating: "4.6(60)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "CHOOSE PRODUCT"
+    },
+    {
+        number: "",
+        shadeImg: "",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-face-fwd-corrector-stick-01-peach-precedent-peach-13825390542931.jpg?v=1619116625",
+        productName: "FACE FWD >> CORRECTOR",
+        price: "Rs.799",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        rating: "4.5(37)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "CHOOSE PRODUCT"
+    } ,
+    {
+        number: "",
+        shadeImg: "",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-bling-leader-illuminating-moisturizer-13644982681683.jpg?v=1619115847",
+        productName: "BLING LEADER",
+        price: "Rs.499",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        rating: "4.7(130)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "CHOOSE PRODUCT"
+    },
+    {
+        number: "",
+        shadeImg: "",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-arrested-for-overstay-waterproof-eyeliner-01-i-ll-be-black-black-12784884973651.jpg?v=1619101912",
+        productName: "ARRESTED FOR OVERSTAY",
+        price: "Rs.899",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        rating: "4.6(17)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "CHOOSE PRODUCT"
+    },
+    {
+        number: "",
+        shadeImg: "",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-eye-dared-you-so-metallic-eyeliner-01-bronze-horseman-metallic-coppery-bronze-13272118165587.jpg?v=1619108841",
+        productName: "EYE DARED YOU SO!",
+        price: "Rs.349",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        rating: "4.6(62)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "CHOOSE PRODUCT"
+    },
+    {
+        number: "",
+        shadeImg: "",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-never-say-dry-creme-lipstick-28122596769875.jpg?v=1619102140",
+        productName: "NEVER SAY DRY CREAM LIQIUD",
+        price: "Rs.250",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        rating: "4.5(13)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "CHOOSE PRODUCT"
+    },
+    {
+        number: "",
+        shadeImg: "",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-uptown-curl-lengthening-mascara-01-black-beauty-black-28122637828179.jpg?v=1619106532",
+        productName: "UPTOWN CURL",
+        price: "Rs.499",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        rating: "4.7(68)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "CHOOSE PRODUCT"
+    },
+    {
+        number: "",
+        shadeImg: "",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-eyes-and-shine-shadow-crayon-01-sapphire-sizzle-metallic-cobalt-blue-28128204095571.jpg?v=1619113401",
+        productName: "EYES AND SHINE SHADOW",
+        price: "Rs.300",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        rating: "4.7(54)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "CHOOSE PRODUCT"
+    },
+    {
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-magic-wand-waterproof-concealer-07-vanilla-latte-fair-golden-undertone-13278398611539.jpg?v=1619114712",
+        productName: "MAGIC WAND..",
+        price: "Rs.799",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        rating: "4.8(194)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "CHOOSE PRODUCT"
+    },
+    {
+        number: "",
+        shadeImg: "",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-powder-play-translucent-compact-28122598932563.jpg?v=1619116304",
+        productName: "POWDER PLAY",
+        price: "Rs.599",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        rating: "4.7(26)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "CHOOSE PRODUCT"
+    },
+    {
+        number: "",
+        shadeImg: "",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-face-fwd-corrector-stick-01-peach-precedent-peach-13825390542931.jpg?v=1619116625",
+        productName: "FACE FWD >> CORRECTOR",
+        price: "Rs.799",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        rating: "4.5(37)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "CHOOSE PRODUCT"
+    },
+    {
+        number: "",
+        shadeImg: "",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-power-clay-spf20-bb-cushion-refill-05-blonde-latte-light-shade-with-neutral-undertone-14113836400723.jpg?v=1619117295",
+        productName: "POWER CLAY SPF20 BB... ",
+        price: "Rs.699",
+        star: "https://sugarcosmetics.com/star_filled.png",
+        rating: "4.4(8)",
+        heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+        select: "CHOOSE PRODUCT"
+    },
+    
+];  
+    // Product List end
+
+    var count = 0
+
+    productsDetails.map(function(elem){
+
+        var mainDiv = document.createElement("div")
+        mainDiv.setAttribute("class", "container")
+        count++
+
+        var divForShade = document.createElement("div")
+        divForShade.setAttribute("class", "div_for_shade")
+        var numberOfShade = document.createElement("p")
+        numberOfShade.innerText = elem.number;
+        var shadeImg = document.createElement("img")
+        shadeImg.setAttribute("src", elem.shadeImg)
+        divForShade.append(numberOfShade, shadeImg)
+
+        var productImg = document.createElement("img")
+        productImg.setAttribute("src", elem.productImg)
+        productImg.setAttribute("class", "productImg")
+
+        var productName = document.createElement("h6")
+        productName.innerText = elem.productName
+        productName.setAttribute("class", "productName")
+
+        var price = document.createElement("p")
+        price.innerText = elem.price
+        price.setAttribute("class", "price")
+
+        var divForStar = document.createElement("div")
+        divForStar.style.display = "flex"
+        divForStar.style.backgroundColor = "#ffffff"
+        divForStar.style.justifyContent = "center"
+        var star = document.createElement("img")
+        star.setAttribute("src", elem.star)
+        star.style.height = "16px"
+        star.style.backgroundColor = "#ffffff"
+        var rating = document.createElement("p")
+        rating.innerText = elem.rating
+        rating.setAttribute("class", "rating")
+        divForStar.append(star, rating)
+
+        var divHover = document.createElement("div")
+        divHover.setAttribute("class", "div_hover")
+        var div_heart = document.createElement("div")
+        var heart = document.createElement("img")
+        heart.setAttribute("src", elem.heartImg)
+        div_heart.append(heart)
+        var div_select = document.createElement("div")
+        var select = document.createElement("p")
+        select.innerText = elem.select
+        div_select.append(select)
+        divHover.append(div_heart, div_select)
+
+        mainDiv.addEventListener("mouseover", function(){
+            divHover.style.display = "flex"
+        })
+
+        mainDiv.addEventListener("mouseleave", function(){
+            divHover.style.display = "none"
+        })
+
+        mainDiv.append(divForShade, productImg, productName, price, divForStar, divHover)
+
+        document.querySelector("#productlist").append(mainDiv)
+    })
+
+    document.querySelector("#second>p>span>span").innerText = count
+</script>
+
+<!-- Read More Section -->
+<script>
+
+    var flag = false;
+     document.getElementById("READMOREABOUT").addEventListener("click",function(){
+        flag=!flag;
+        if(flag==false)
+        {
+            document.getElementById("READMOREABOUTdiv").style.display="none"
+            document.getElementById("READMOREABOUT").style.backgroundColor="#f5f5f5"
+            document.getElementById("READMOREABOUT").style.color="black"
+            document.getElementById("parentREADMOREABOUT").style.height="100px"
+        }
+        else{
+            document.getElementById("READMOREABOUTdiv").style.display="block"
+            document.getElementById("READMOREABOUT").style.backgroundColor="#444242"
+            document.getElementById("READMOREABOUT").style.color="white"
+            document.getElementById("parentREADMOREABOUT").style.height="825px"
+        }
+
+     })
+
+
+    var READMOREABOUTdiv1 = document.createElement("div")
+    READMOREABOUTdiv1.innerHTML="Upgrade your skincare routine with SUGAR Skin Care Products";
+    READMOREABOUTdiv1.setAttribute("class","category1")
+    
+
+
+    var READMOREABOUTdiv2 = document.createElement("div")
+    READMOREABOUTdiv2.innerHTML="Makeup, whether heavy, light, dramatic or the classic no-makeup style is all cool and is the way to go for women today, yet the beauty basics begin with the perfect skin care.   Pampered and well taken care of skin is the perfect canvas to wear any makeup or flaunt the super cool au natural feel. Take the first step towards a beautiful you by embarking on a dedicated skin care ritual. And at SUGAR Cosmetics, we tell you just how simple (and therapeutic) your skin care regime can be! Skilfully crafted in the laboratories of SUGAR are expert face care products that will completely change your skin care game. If you haven’t given much thought to taking care of your skin until today, you are at the right place. From <span id=para1>peel-off face masks, moisturizers</span> to serums, scrubs and lotions, we have you covered! "
+    READMOREABOUTdiv2.setAttribute("class","category2")
+
+    var READMOREABOUTdiv3 = document.createElement("div");
+    READMOREABOUTdiv3.innerHTML="SUGAR Skincare for healthy, glowing skin"
+    READMOREABOUTdiv3.setAttribute("class","category1")
+
+    var READMOREABOUTdiv4 = document.createElement("div");
+    READMOREABOUTdiv4.innerHTML="Let us begin with the most crucial and non-negotiable step in a skin care routine- cleansing. Cleansing helps in removing makeup, dirt, pollution and every minuscule debris that clog your pores. This paves a way for skin care products to better penetrate your skin. Wondering where to begin? Presenting the<span id=para1>Power Clay 3-Min Pore Cleansing Mask</span>, a star skin care product infused with the goodness of Charcoal powder and Kaolin Clay that draws out impurities, absorbs excess oils, detoxifies skin and tightens pores. The end results. A deeply refreshed and clean skin. "
+    READMOREABOUTdiv4.setAttribute("class","category2")
+
+    var READMOREABOUTdiv9 = document.createElement("div");
+    READMOREABOUTdiv9.innerHTML="The next important step post cleansing is moisturising. Cleansing, along with removing dirt and makeup, can strip your skin off its natural oils. Hence it is important you replenish it with our<span id=para1>Aquaholic Water Boost Mask</span>that deeply hydrates, nourishes and replumps your skin to its original glory. Put on some good music, light a few scented candles and relax with your favourite drink as the mask works its magic on your skin. 20 mins and that’s all the TLC you need. In case you are a lazy bum who loves to sleep on with face products, you then better sleep with our<span id=para1>Aquaholic Overnight Water Mask</span>that dehydrates, replenishes and soothes your skin overnight. Enriched with herbal extracts and magical spring water from Switzerland, this skin care product can either be dotted onto your skin or blended. Our other hydrating face care  products that we absolutely love and swear by are the<span id=para1>Aquaholic Hydrating Stick, Citrus Got Real Cooling Stick</span>and the <span id=para1>Citrus Got Real Daily Moisturiser. </span>These pH balanced formulas are curated for every skin type to give it the much-needed hydration. Orange peel oil present in our Citrus range acts up to brighten our skin whereas the arginine, castor oil and glycerine present in them fights against free radical damage and helps restore any lost moisture back to your skin."
+    READMOREABOUTdiv9.setAttribute("class","category2")
+
+    var READMOREABOUTdiv10 = document.createElement("div");
+    READMOREABOUTdiv10.innerHTML="The third and the most important step in your skincare regime that secures all the effort you have put in so far is a protecting sunblock. And for that we recommend our<span id=para1>Citrus Got Real SPF30 Sunblock.</span>This gentle, light-weight skin care product is non greasy, provides a broad-spectrum protection against harsh UVA & UVB rays and also helps in curing hyperpigmentation, ageing and dull spots. "
+    READMOREABOUTdiv10.setAttribute("class","category2")
+
+    var READMOREABOUTdiv5 = document.createElement("div");
+    READMOREABOUTdiv5.innerHTML="Shop for a wide range SUGAR skin care products online in India"
+    READMOREABOUTdiv5.setAttribute("class","category1")
+
+    var READMOREABOUTdiv6 = document.createElement("div");
+    READMOREABOUTdiv6.innerHTML="Apart from the above-mentioned skin care products, we love our face masks that are perfect for a girl-on-the-go. We understand how busy our lives have become and taking out time for an elaborate skin care regimen might not be your thing. These ingenious skincare products have our heart and soul as they actually deliver what they promise. Tired after a long day at work? Put on a face mask and relax. Have to attend a wedding but have no time for skin TLC? Put on a face mask and you have glowing skin within a matter of minutes. Have you been battling the increasing pollution in the city? A charcoal face mask is your answer. See, how versatile <span id=para1>face masks</span>are? And at SUGAR we have the widest range of face masks for every concern. For example, our <span id=para1> Cheat Sheet Brightening Mask</span> is a serum-soaked mask that helps detoxify, cleanse, hydrate, vitalize & brighten your skin. If you are looking for anti-ageing properties in a face mask, we have our<span id=para1>Cheat Sheet Anti Aging Mask</span>to your rescue. In case you are fighting off stubborn acne, we have our popular<span id=para1>Acne Combo</span>, a combination of two effective and super hydrating face masks that will sooth any flare ups and provide antifungal aid to infected skin. There are so many face care products and such little time!"
+    READMOREABOUTdiv6.setAttribute("class","category2")
+
+    var READMOREABOUTdiv7 = document.createElement("div");
+    READMOREABOUTdiv7.innerHTML="Shop SUGAR skin care products online at great price"
+    READMOREABOUTdiv7.setAttribute("class","category1")
+
+    var READMOREABOUTdiv8 = document.createElement("div");
+    READMOREABOUTdiv8.innerHTML="At SUGAR Cosmetics, your skin care is our priority and hence we present to you our expert skin care products online at best prices. Now shop from our best skin care products only at www.sugar cosmetics.com and avail great offers and discounts online in India. Our hassle-free payment gateway and cash on delivery options will ensure you come back every time. Come, make some space for our face care products in your skin care regime and say goodbye to skin woes, forever!"
+    READMOREABOUTdiv8.setAttribute("class","category2")
+
+   document.getElementById("READMOREABOUTdiv").append(READMOREABOUTdiv1,READMOREABOUTdiv2,READMOREABOUTdiv3,READMOREABOUTdiv4,READMOREABOUTdiv9,READMOREABOUTdiv10,READMOREABOUTdiv5,READMOREABOUTdiv6,READMOREABOUTdiv7,READMOREABOUTdiv8)
+
+</script>
+<!-- Read More Section -->
+
+
+
+<script>
+    var div1 = document.createElement("div")
+    div1.setAttribute("id","div1");
+    var div1img = document.createElement("img");
+    div1img.setAttribute("src","https://in.sugarcosmetics.com/Footer_sugar_icon.png")
+    div1.append(div1img)
+
+    var div2 = document.createElement("div")
+    div2.setAttribute("id","div2");
+    var div2img1 = document.createElement("img")
+    //div2img1.innerHTML="<img src=https://in.sugarcosmetics.com/desc-images/facebook.svg/>"
+    div2img1.setAttribute("src","https://in.sugarcosmetics.com/desc-images/facebook.svg");
+
+    var div2img2 = document.createElement("img")
+    div2img2.setAttribute("src","data:image/png;base64,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");
+
+    var div2img3 = document.createElement("img")
+    div2img3.setAttribute("src","https://in.sugarcosmetics.com/desc-images/Instagram.svg");
+
+    var div2img4 = document.createElement("img")
+    div2img4.setAttribute("src","https://in.sugarcosmetics.com/desc-images/Pinterest.svg");
+
+    var div2img5 = document.createElement("img")
+    div2img5.setAttribute("src","https://in.sugarcosmetics.com/desc-images/Tumblr.svg");
+
+    var div2img6 = document.createElement("img")
+    div2img6.setAttribute("src","https://in.sugarcosmetics.com/desc-images/Youtube.svg");
+
+    var div2img7 = document.createElement("img")
+    div2img7.setAttribute("src","https://cdns.iconmonstr.com/wp-content/assets/preview/2012/240/iconmonstr-twitter-1.png");
+
+    div2.append(div2img1,div2img2,div2img3,div2img4,div2img5,div2img6,div2img7)
+
+    var div3 = document.createElement("div")
+    div3.setAttribute("id","div3")
+
+    var div3text1 = document.createElement("div")
+    div3text1.innerText="SUBSCRIBE TO OUR NEWSLETTER"
+    var div3text2 = document.createElement("div")
+    div3text2.innerText="GET THE NEW SUGAR APP TODAY."
+    div3.append(div3text1,div3text2)
+
+    var div4 = document.createElement("div");
+    div4.setAttribute("id","div4")
+    var div4input = document.createElement("input")
+    div4input.setAttribute("type","email")
+    div4input.setAttribute("placeholder","Your email address")
+    
+    var div4btn = document.createElement("button")
+    div4btn.innerText="SIGN UP"
+
+    var div4text = document.createElement("div")
+    div4text.innerText="Tap into a better shopping experience."
+
+    var div4img1 = document.createElement("img")
+    div4img1.setAttribute("src","https://in.sugarcosmetics.com/playstore.png")
+
+    var div4img2 = document.createElement("img");
+    div4img2.setAttribute("src","https://in.sugarcosmetics.com/apple-store.png")
+
+    div4.append(div4input,div4btn,div4text,div4img1,div4img2)
+
+    var hr = document.createElement("hr")
+    hr.setAttribute("id","hr")
+
+    var div5 = document.createElement("div")
+    div5.innerText="INFORMATION"
+    div5.setAttribute("id","div5")
+
+    var div6 = document.createElement("div");
+    div6.setAttribute("id","div6")
+
+    var div61 = document.createElement("div");
+    div61.innerText="Contact Us"
+    var div62 = document.createElement("div");
+    div62.innerText="Terms & Conditions"
+    var div63 = document.createElement("div");
+    div63.innerText="Returns"
+    var div64 = document.createElement("div");
+    div64.innerText="FAQs"
+    var div65 = document.createElement("div");
+    div65.innerText="About Us"
+
+    div6.append(div61,div62,div63,div64,div65)
+
+    var div7 = document.createElement("div")
+    div7.innerText="GET IN TOUCH"
+    div7.setAttribute("id","div7")
+
+    
+    var div8 = document.createElement("div")
+     div8.setAttribute("id","div8")
+
+     var parentdiv81 = document.createElement("div")
+     parentdiv81.setAttribute("id","parentdiv81")
+     
+     var div81img = document.createElement("img")
+     div81img.setAttribute("src","https://in.sugarcosmetics.com/desc-images/phone_android_white.svg")
+
+     var div81 = document.createElement("div")
+     div81.innerHTML="Call us at <p id=cate1>022-2847-5555</p> <p id=cate1>022-6805-6009</p> <p id=cate2>Monday to Friday : 9 AM to 7 PM</p>"
+     div81.setAttribute("id","backgroundblack")
+     div81.style.backgroundColor="black"
+
+     parentdiv81.append(div81img,div81)
+      
+     var div82 = document.createElement("div");
+     div82.innerHTML="Support <p id=cate1>hello@sugarcosmetics.com</p>"
+  
+     var div83 = document.createElement("div");
+     div83.innerHTML="WORK WITH US <p id=cate1>careers@sugarcosmetics.com</p>"
+     var div84 = document.createElement("div");
+     div84.innerHTML="PRESS & MEDIA <p id=cate1>pr@sugarcosmetics.com</p>"
+     var div85 = document.createElement("div");
+     div85.innerHTML="INFLUENCER COLLAB <p id=cate1>JOIN US</p>"
+
+
+    div8.append(parentdiv81,div82,div83,div84,div85)
+
+    var hr2 = document.createElement("hr")
+    hr2.setAttribute("id","hr2")
+
+    var div9 = document.createElement("div")
+    div9.innerText="Copyright © 2022 SUGAR Cosmetics. All rights reserved."
+    div9.setAttribute("id","div9")
+    
+
+    document.getElementById("footer").append(div1,div2,div3,div4,hr,div5,div6,div7,div8,hr2,div9)
+
+</script>
