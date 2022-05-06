@@ -29,8 +29,8 @@ var productsDetails = [
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-contour-de-force-mini-blush-01-peach-peak-soft-peach-pink-11020203884627.jpg?v=1619102626",
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
-        price: "Rs.599",
-        priceToAdd: 599,
+        price: "Rs.499",
+        priceToAdd: 499,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -41,8 +41,8 @@ var productsDetails = [
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/1_6f55bcac-3e42-4253-88ee-cec0fa43c62a.jpg?v=1645608270",
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
-        price: "Rs.599",
-        priceToAdd: 599,
+        price: "Rs.619",
+        priceToAdd: 619,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -53,8 +53,8 @@ var productsDetails = [
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/1_ef579f2e-602e-4d2f-bed2-bf0efdf4f184.jpg?v=1644325813",
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
-        price: "Rs.599",
-        priceToAdd: 599,
+        price: "Rs.459",
+        priceToAdd: 459,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
