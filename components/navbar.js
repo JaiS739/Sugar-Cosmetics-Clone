@@ -60,7 +60,7 @@ let navbar = ()=>{
           <div class="dropdown-makeup">
             <ul>
               <li>
-                <a href="makeup.html">LIPS</a>
+                <a href="lips.html">LIPS</a>
               </li>
               <li>
                 <a href="makeup.html">FACE</a>
@@ -75,7 +75,9 @@ let navbar = ()=>{
           <a href="brush.html" class="nav_link">BRUSHES</a>
           <div class="dropdown-makeup">
             <ul>
-              <li>FACE BRUSHES</li>
+              <li>
+              <a href="brush.html">FACE BRUSH</a></li>
+              
               <li>EYE BRUSHES 
               <div class="2drop">
               <ul>
@@ -88,10 +90,11 @@ let navbar = ()=>{
           </div>
         </li>
         <li>
-          <a href="" class="nav_link"> SKINCARE </a>
+          <a href="blog_Skin.html" class="nav_link"> SKINCARE </a>
           <div class="dropdown-makeup">
             <ul>
-              <li>MOISTURIZERS</li>
+              <li>
+              <a href="moisturizer.html">MOISTURIZERS</li>
               <li>MASKS</li>
               <li>SETTING MISTS</li>
               <li>COFFEE CULTURE RANGE</li>
@@ -100,10 +103,11 @@ let navbar = ()=>{
           </div>
         </li>
         <li>
-          <a href="" class="nav_link"> TRENDING </a>
+          <a href="trend.html" class="nav_link"> TRENDING </a>
           <div class="dropdown-makeup">
             <ul>
-              <li>SUGAR MERCH STATION</li>
+              <li>
+              <a href="sugermerch.html">SUGAR MERCH STATION</a></li>
               <li>MINIS SET</li>
               <li>MAKEUP KITS</li>
               <li>BESTSELLERS</li>
@@ -111,12 +115,12 @@ let navbar = ()=>{
           </div>
         </li>
         <li>
-          <a href="" class="nav_link">BLOG </a>
+          <a href="blog.html" class="nav_link">BLOG </a>
           <div class="dropdown-makeup">
             <ul>
               <li>FEATURED</li>
-              <li>MAKEUP</li>
-              <li>SKINCARE</li>
+              <li><a href="blogMakeup.html">MAKEUP</a></li>
+              <li><a href="blog_Skin">SKINCARE</a></li>
             </ul>
           </div>
         </li>
