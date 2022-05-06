@@ -297,12 +297,19 @@ logo.addEventListener('click', function(){
   document.querySelector(
     "#displayitem"
   ).textContent = `Brush - ${brushData.length} items`;
+   
+  let productArr = JSON.parse(localStorage.getItem("AddToCartProduct")) || [];
 
   function displayData(brushData) {
     document.querySelector("#container-prod").innerHTML = "";
     brushData.map(function (elem) {
       var div = document.createElement("div");
       div.setAttribute("id", "main");
+     
+      div.addEventListener("click", function(){
+            addTocart(elem)
+        })
+
 
       var img = document.createElement("img");
       img.setAttribute("src", elem.image_url);
@@ -366,4 +373,12 @@ logo.addEventListener('click', function(){
     localStorage.setItem("listItems", JSON.stringify(wishlistArr));
     alert("Item added to wish list");
   }
+   
+   
+  function  addTocart(elem){
+        productArr.push(elem);
+        localStorage.setItem("AddToCartProduct",JSON.stringify(productArr));
+    }
+
+
 </script>
