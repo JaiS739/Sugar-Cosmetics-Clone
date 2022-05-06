@@ -119,12 +119,17 @@
 ];
 
     var count = 0
+    let productArr = JSON.parse(localStorage.getItem("AddToCartProduct")) || [];
 
     productsDetails.map(function(elem){
 
         var mainDiv = document.createElement("div")
         mainDiv.setAttribute("class", "container")
-        count++
+        count++;
+
+        mainDiv.addEventListener("click", function(){
+            addTocart(elem)
+        })
 
         var divForShade = document.createElement("div")
         divForShade.setAttribute("class", "div_for_shade")
@@ -185,5 +190,12 @@
     })
 
     document.querySelector("#second>p>span>span").innerText = count
+
+    
+    function  addTocart(elem){
+        productArr.push(elem);
+        localStorage.setItem("AddToCartProduct",JSON.stringify(productArr));
+    }
+
 </script>   
 

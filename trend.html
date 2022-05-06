@@ -660,13 +660,19 @@
 ];  
     // Product List end
 
-    var count = 0
+    var count = 0;
+
+    let productArr = JSON.parse(localStorage.getItem("AddToCartProduct")) || [];
 
     productsDetails.map(function(elem){
 
         var mainDiv = document.createElement("div")
         mainDiv.setAttribute("class", "container")
         count++
+
+        mainDiv.addEventListener("click", function(){
+            addTocart(elem)
+        })
 
         var divForShade = document.createElement("div")
         divForShade.setAttribute("class", "div_for_shade")
@@ -929,5 +935,11 @@
     
 
     document.getElementById("footer").append(div1,div2,div3,div4,hr,div5,div6,div7,div8,hr2,div9)
+
+
+    function  addTocart(elem){
+        productArr.push(elem);
+        localStorage.setItem("AddToCartProduct",JSON.stringify(productArr));
+    }
 
 </script>
