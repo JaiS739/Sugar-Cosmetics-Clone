@@ -14,7 +14,7 @@ var cart = document.querySelector("#cart");
  })
   var discount = document.querySelector("#discount");
  discount.addEventListener('click', function(){
-   window.location.href ="discount.html"
+   window.location.href ="offer.html"
  })
 
     var logo = document.querySelector(".logo");
