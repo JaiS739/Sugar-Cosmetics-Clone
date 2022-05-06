@@ -13,6 +13,7 @@ body {
     width: 95%;
     margin: auto;
     color: #505357;
+    padding: 20px 0px;
 }
 #box1 {
     display: flex;
@@ -26,6 +27,7 @@ body {
     height: 20px;
     color: black;
     cursor: pointer;
+    /* margin-bottom: 10px; */
 }
 #box2 {
     width: 15%;
@@ -52,7 +54,7 @@ body {
     /* border: 1px solid red; */
     cursor: pointer;
     background-color: white;
-    line-height: 5px;
+    line-height: 30px;
 }
 #numdiv {
     display: flex;
@@ -60,7 +62,7 @@ body {
 }
 #numimg {
     height: 15px;
-    margin-top: 11px;
+    margin-top: 7px;
 }
 #prodimg {
     width: 194px;
@@ -81,7 +83,7 @@ body {
 .star {
     width: 17px;
     height: 17px;
-    margin-top: 10px;
+    margin-top: 7px;
 }
 .p {
     padding-top: 30px;
