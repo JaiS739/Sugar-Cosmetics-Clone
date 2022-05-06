@@ -1,12 +1,12 @@
-document.querySelector(".gotoCartButton").addEventListener("click",sendingToCart);
+// document.querySelector(".gotoCartButton").addEventListener("click",sendingToCart);
 
-function sendingToCart(){
-  window.location.href="mycart.html"
-}
+// function sendingToCart(){
+//   window.location.href="mycart.html"
+// }
 
-  function singOpFunction() {
-    window.location.href = "login.html";
-  }
+  // function singOpFunction() {
+  //   window.location.href = "login.html";
+  // }
   var btnScrollToTop = document.querySelector("#btnScrollToTop");
   btnScrollToTop.addEventListener("click", function () {
     window.scrollTo({
@@ -23,11 +23,11 @@ function sendingToCart(){
 
   // =========================cartdata marking======================
 
-  var cartData = JSON.parse(localStorage.getItem("sendToCartData1"));
+  var cartData = JSON.parse(localStorage.getItem("AddToCartProduct"));
   console.log(cartData);
 
   var total = cartData.reduce(function (sum, elem, ind, arr) {
-    return sum + Number(elem.price);
+    return sum + Number(elem.priceToAdd);
   }, 0);
 
   document.querySelector("#subtotalprice").innerText =
