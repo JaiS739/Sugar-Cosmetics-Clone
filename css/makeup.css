@@ -6,6 +6,7 @@ body {
     justify-content: space-between;
     width: 95%;
     margin: auto;
+    padding: 40px 0px;
 }
 #head2 {
     display: flex;
