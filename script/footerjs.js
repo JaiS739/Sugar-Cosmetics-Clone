@@ -1,5 +1,5 @@
 
-import{footer} from "../components/footer.js";
+import{footer} from "../componentsfooter/footer.js";
 
 let n=document.getElementById("footer");
 n.innerHTML=footer();

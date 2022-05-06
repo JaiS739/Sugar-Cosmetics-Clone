@@ -19,7 +19,7 @@ var cart = document.querySelector("#cart");
 
     var logo = document.querySelector(".logo");
  logo.addEventListener('click', function(){
-   window.location.href ="home.html"
+   window.location.href ="index.html"
  })
 
  var slideIndex = 0;

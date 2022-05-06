@@ -625,6 +625,7 @@ p{
     width: 100%;
     margin: auto;
     height: 200px;
+    margin-bottom: 50px;
    
 }
 
@@ -646,6 +647,7 @@ p{
 
 
 #explore{
-    margin-top: 210px;
+    margin-top: 150px;
+    
 }
 
