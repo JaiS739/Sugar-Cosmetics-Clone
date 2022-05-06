@@ -6,7 +6,7 @@ n.innerHTML=navbar();
 
 var cart = document.querySelector("#cart");
  cart.addEventListener('click', function(){
-   window.location.href ="cartPage.html"
+   window.location.href ="cart.html"
  })
   var wishlist = document.querySelector("#wishlist");
  wishlist.addEventListener('click', function(){
