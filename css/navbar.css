@@ -46,6 +46,7 @@ body {
     .logo {
       margin: 2.2% .8%;
       width: 13%;
+      cursor: pointer;
     }
     .logo > img {
       margin-left: 35px;
