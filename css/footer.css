@@ -1,0 +1,228 @@
+*{  margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+
+
+
+#footer{
+   width: 100%;
+   height: 720px;
+   background-color: black;
+   color: white;
+   font-weight: bold;
+   
+}
+
+#div1{
+   margin: auto;
+   width: 120px;
+   height: 120px;
+   background-color: black;
+  
+   
+}
+
+#div1>img{
+   height: 120px;
+   width: 120px;
+   background-color: black;
+  
+}
+
+#div2{
+   height: 20px;
+   width: 200px;
+   margin: auto;
+   display: flex;
+   background-color: black;
+   padding-left: 50px;
+   
+}
+
+#div2>img{
+   width: 20px;
+   height: 20px;
+   margin-right: 11px;
+   background-color: black;
+   
+}
+
+#div3{
+   width: 60%;
+   height: 30px;
+   margin-left: 100px;
+   margin-top: 30px;
+   display: flex;
+   background-color: black;
+   padding-left: 50px;
+}
+
+#div3>div:first-child{
+   justify-content: flex-start;
+   background-color: black;
+   padding-left: 50px;
+}
+
+#div3>div:last-child{
+   justify-content: flex-end;
+   margin-left: 330px;
+   background-color: black;
+   padding-left: 50px;
+}
+
+#div4{
+   width:60%;
+   height: 60px;
+   margin-left: 100px;
+   margin-top: 5px;
+   display: flex;
+   background-color: black;
+   padding-left: 50px;
+}
+
+#div4>input{
+   background-color: black;
+   color: white;
+   font-size: 15px;
+   border: none;
+   width: 260px;
+   height: 60px;
+   padding-left: 50px;
+}
+
+#div4>button{
+   background-color: deeppink;
+   color: white;
+   border: deeppink;
+   width: 93.38px;
+   height: 40px;
+   border-radius: 7px;
+   margin-top: 20px;
+   
+}
+
+#div4>div{
+   width: 206px;
+   height: 48px;
+   color: gray;
+   margin-left: 250px;
+   margin-top: 7px;
+   background-color: black;
+   padding-left: 50px;
+}
+
+#div4>img:nth-child(4){
+   width: 99.88px;
+   height:30px ;
+   margin-top: 4px;
+   margin-right: 8px;
+   background-color: black;
+   padding-left: 50px;
+}
+
+#div4>img:nth-child(5){
+   width: 87.52px;
+   height:30px ;
+   margin-top: 4px;
+   background-color: black;
+   padding-left: 50px;
+}
+
+#hr{
+   margin-left: 100px;
+   width: 260px;
+   background-color: black;
+   padding-left: 50px;
+}
+
+#div5,#div7{
+   width: 60%;
+   height: 20.39px;
+   font-size: 17px;
+   margin: 0px 0px 8px;
+   margin-top: 30px;
+   margin-left: 100px;
+   background-color: black;
+   padding-left: 50px;
+}
+
+#div6{
+   width: 60%;
+   height: 24px;
+   font-size: 16px;
+   margin: 0px 0px 8px;
+   margin-top: 15px;
+   margin-left: 100px;
+   display: flex;
+   color: gray;
+   background-color: black;
+   padding-left: 50px;
+}
+
+#div6>div{
+   margin-right: 90px;
+   background-color: black;
+   padding-left: 50px;
+}
+#div8{
+   width: 60%;
+   height: 90px;
+   margin-left: 10px;
+   margin-top: 20px;
+   display: flex;
+   color: white;
+   background-color: black;
+   margin-left: 50px;
+   padding-left: 50px;
+}
+#cate1{
+   color: gray;
+   padding-top: 5px;
+   background-color: black;
+   padding-left: 70px;
+}
+#cate1n{
+    color:blue;
+    padding-left: 30px;
+    padding-left: 50px;
+}
+#cate2{
+   color: gray;
+   font-size: 13px;
+   padding-top: 5px;
+   background-color: black;
+   
+}
+#parentdiv81{
+   display: flex;
+   background-color: black;
+}
+#parentdiv81>img{
+   width: 15px;
+   height: 15px;
+   background-color: black;
+}
+#div8>div{
+   margin-right: 60px;
+   background-color: black;
+}
+#hr2{
+   margin-left: 70px;
+   margin-right: 40px;
+   margin-top: 30px;
+   background-color: black;
+}
+#div9{
+   width: 60%;
+   height: 20.39px;
+   font-size: 17px;
+   margin: auto;
+   margin-top: 30px;
+   margin-left: 500px;
+   background-color: black;
+}
