@@ -1,3 +1,11 @@
+import{navbar} from "../components/navbar.js";
+
+let n=document.getElementById("header-container");
+n.innerHTML=navbar();
+
+
+
+
 const signUpButton = document.getElementById('signUp');
 const signInButton = document.getElementById('signIn');
 const container = document.getElementById('container');
@@ -87,6 +95,7 @@ function loginFunction(){
 		if(loginDetails[i].email===email && loginDetails[i].password===password){
 			setTimeout(()=>{
 				alert("hurray Login Sucessfull");
+				window.location.href="index.html"
 			},2000)
 			break;
 			

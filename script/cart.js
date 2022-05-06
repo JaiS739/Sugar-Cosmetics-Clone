@@ -3,6 +3,14 @@
 // function sendingToCart(){
 //   window.location.href="mycart.html"
 // }
+import{navbar} from "../components/navbar.js";
+
+let n=document.getElementById("header-container");
+n.innerHTML=navbar();
+
+
+
+
 
   function singOpFunction() {
     window.location.href = "login.html";
