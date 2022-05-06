@@ -4,9 +4,9 @@
 //   window.location.href="mycart.html"
 // }
 
-  // function singOpFunction() {
-  //   window.location.href = "login.html";
-  // }
+  function singOpFunction() {
+    window.location.href = "login.html";
+  }
   var btnScrollToTop = document.querySelector("#btnScrollToTop");
   btnScrollToTop.addEventListener("click", function () {
     window.scrollTo({
@@ -57,18 +57,18 @@
 
   cartData.map(function (elem,index) {
     var box = document.createElement("div");
-    box.style.margin = "10px 12px";
+ box.setAttribute("class","boxstyle");
     box.style.display = "flex";
 
     var img = document.createElement("img");
-    img.src = elem.producturl;
-    img.setAttribute("id", "images");
+    img.src = elem.productImg;
+    img.setAttribute("class", "images");
     // img.style.cursor = "pointer";
     // img.style.border = "1px solid red";
     // img.style.margin = "10px 0px"
 
     var name = document.createElement("p");
-    name.textContent = elem.productname;
+    name.textContent = elem.productName;
     name.style.fontWeight = "bold";
     name.style.marginLeft = "10px";
 
@@ -77,11 +77,11 @@
     // price.style.margin = "16px 25px 0px 25px";
 
     var qty = document.createElement("p");
-   
+    qty.textContent = 1;
     qty.style.margin = "16px 25px 0px 30px";
 
     var total = document.createElement("p");
-    total.textContent = elem.price;
+    total.textContent = elem.priceToAdd;
     total.style.margin = "16px 25px 0px 30px";
 
     var btn = document.createElement("button");
@@ -93,14 +93,14 @@
 
     box.append(img, name, total, btn);
 
-    document.querySelector("tbody").append(box);
+    document.querySelector("#cartcontent").append(box);
   });
 
   function removeItem(elem, index) {
     console.log(elem, index);
     cartData.splice(index, 1);
     console.log(cartData);
-    localStorage.setItem("sendToCartData1", JSON.stringify(cartData));
+    localStorage.setItem("AddToCartProduct", JSON.stringify(cartData));
     window.location.reload();
   }
 
