@@ -7,11 +7,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="css/trend.css">
-    >
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
+    
 
 </head>
 
 <body>
+    <div id="header-container">
+      
+    </div>
+
     <!-- top part start -->
     <div id="top-part">
 
@@ -37,9 +43,14 @@
     <!-- products list start-->
     <div id="productlist"></div>
     <!-- products list end -->
+    <div id="footer"></div>
+
 </body>
 
 </html>
+
+<script type="module" src="script/navbarjs.js"></script>
+<script type="module" src="script/footerjs.js"></script>
 <script>
     // Product List start
     var productsDetails = [
@@ -49,6 +60,7 @@
             productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-money-maker-envelope-wallet-grey-28490559979603.jpg?v=1624953191",
             productName: "MONEY MAKER ENVELOPE",
             price: "Rs.599",
+            priceToAdd: 599,            
             star: "",
             rating: "",
             heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -61,6 +73,7 @@
             productName: "GLAMPACKER DUFFLE BAG",
             star: "https://sugarcosmetics.com/star_filled.png",
             price: "Rs.999",
+            priceToAdd: 999,
             rating: "4.8(6)",
             heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
             select: "CHOOSE PRODUCTS"
@@ -71,6 +84,7 @@
             productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-tote-chic-canvas-carry-28477196927059.jpg?v=1624532788",
             productName: "TOTE CHIC CANVAS CARRY",
             price: "Rs.799",
+            priceToAdd: 799,
             star: "https://sugarcosmetics.com/star_filled.png",
             rating: "5(1)",
             heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -82,6 +96,7 @@
             productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/D2C---Merch---Laptop-Sleeves_1.jpg?v=1625240618",
             productName: "EASY PC LAPTOP SLEEVE",
             price: "Rs.799",
+            priceToAdd: 799,
             star: "https://sugarcosmetics.com/star_filled.png",
             rating: "5(1)",
             heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -92,6 +107,7 @@
             productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-holographic-signature-sugar-tee-white-extra-large-28516866588755.jpg?v=1629195790",
             productName: "HOLOGRAPHIC..",
             price: "Rs.799",
+            priceToAdd: 799,
             star: "",
             rating: "",
             heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -103,6 +119,7 @@
             productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-holographic-signature-sugar-tee-white-extra-large-28516866588755.jpg?v=1629195790",
             productName: "HOLOGRAPHIC..",
             price: "Rs.799",
+            priceToAdd:799,
             star: "",
             rating: "",
             heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -114,6 +131,7 @@
             productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/D2C---Merch---T-shirt_3_259d05d8-5ef3-487a-8c92-24b72f8fd8b1.jpg?v=1625240628",
             productName: "HOLOGRAPHIC..",
             price: "Rs.799",
+            priceToAdd: 799,
             star: "",
             rating: "",
             heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -125,6 +143,7 @@
             productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/D2C---Merch---T-shirt_3_259d05d8-5ef3-487a-8c92-24b72f8fd8b1.jpg?v=1625240628",
             productName: "HOLOGRAPHIC..",
             price: "Rs.799",
+           priceToAdd: 799,
             star: "https://sugarcosmetics.com/star_filled.png",
             rating: "5(1)",
             heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -136,6 +155,7 @@
             productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/D2C---Merch---T-shirt_3_259d05d8-5ef3-487a-8c92-24b72f8fd8b1.jpg?v=1625240628",
             productName: "HOLOGRAPHIC..",
             price: "Rs.799",
+            priceToAdd: 799,
             star: "",
             rating: "",
             heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -147,6 +167,7 @@
             productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-holographic-signature-sugar-tee-white-small-28516880744531.jpg?v=1629284004",
             productName: "HOLOGRAPHIC..",
             price: "Rs.799",
+           priceToAdd: 799,
             star: "",
             rating: "",
             heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -158,6 +179,7 @@
             productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/Value-Set-WBG-1.jpg?v=1642089034",
             productName: "BEGINNERS MAKEUP ",
             price: "Rs.999",
+            priceToAdd: 799,
             star: " ",
             rating: " ",
             heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -169,6 +191,7 @@
             productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/D2C---Merch---T-shirt_3_259d05d8-5ef3-487a-8c92-24b72f8fd8b1.jpg?v=1625240628",
             productName: "HOLOGRAPHIC..",
             price: "Rs.799",
+            priceToAdd: 799,
             star: "",
             rating: "",
 
@@ -181,6 +204,7 @@
             productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-grip-trip-pop-socket-yellow-28150898917459.jpg?v=1619156246",
             productName: "GRIP TRIP POP SOCKET....",
             price: "Rs.99",
+            priceToAdd: 99,
             star: "",
             rating: "",
             heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -193,6 +217,7 @@
             productName: "OBESSIVE COMPULSIVE..",
             star: "https://sugarcosmetics.com/star_filled.png",
             price: "Rs.599",
+              priceToAdd: 599,
             rating: "5(5)",
             heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
             select: "SELECT SHADE"
@@ -203,6 +228,7 @@
             productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-holographic-signature-sugar-tee-white-medium-28516852531283.jpg?v=1629195785",
             productName: "HOLOGRAPHIC...",
             price: "Rs.799",
+            priceToAdd: 799,
             star: "",
             rating: "",
             heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -214,6 +240,7 @@
             productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-grip-trip-pop-socket-gradient-blue-28150851174483.jpg?v=1619156238",
             productName: "GRIP TRIP POP STOCKET... ",
             price: "Rs.99",
+            priceToAdd: 99,
             star: "https://sugarcosmetics.com/star_filled.png ",
             rating: "5(1) ",
             heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -225,6 +252,7 @@
             productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-grip-trip-pop-socket-orange-28150906978387.jpg?v=1619156248",
             productName: "GRIP TRIP POP STOCKET... ",
             price: "Rs.99",
+            priceToAdd: 99,
             star: "https://sugarcosmetics.com/star_filled.png ",
             rating: "5(1) ",
             heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -236,6 +264,7 @@
             productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-grip-trip-pop-socket-gradient-purple-28150861889619.jpg?v=1619156240",
             productName: "GRIP TRIP POP STOCKET... ",
             price: "Rs.99",
+              priceToAdd: 99,
             star: "https://sugarcosmetics.com/star_filled.png ",
             rating: "4.0(1) ",
             heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -248,6 +277,7 @@
             productName: "CHIQUE FLEEK CARD",
             star: "https://sugarcosmetics.com/star_filled.png",
             price: "Rs.349",
+              priceToAdd: 399,
             rating: "5(1)",
             heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
             select: "CHOOSE PRODUCT"
@@ -258,6 +288,7 @@
             productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-always-ahead-adjustable-cap-28516708352083.jpg?v=1625067752",
             productName: "HIP STATEMENT WAIST PACK",
             price: "Rs.699",
+            priceToAdd: 699,
             star: "https://sugarcosmetics.com/star_filled.png",
             rating: "5(10)",
             heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -269,6 +300,7 @@
             productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-slim-feat-card-wallet-with-flap-grey-28490591043667.jpg?v=1624956771",
             productName: "SLIM FEAT CARD WALLET",
             price: "Rs.399",
+            priceToAdd: 399,
             star: "https://sugarcosmetics.com/star_filled.png",
             rating: "5(3)",
             heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -281,6 +313,7 @@
             productName: "GRIP TRIP POP SOCKET",
             star: "https://sugarcosmetics.com/star_filled.png",
             price: "Rs.999",
+            priceToAdd: 999,
             rating: "4.3(6)",
             heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
             select: "CHOOSE PRODUCT"
@@ -291,6 +324,7 @@
             productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-money-maker-envelope-wallet-black-28490557358163.jpg?v=1624954703",
             productName: "MONEY MAKER ENVELOPE",
             price: "Rs.599",
+              priceToAdd: 599,
             star: "https://sugarcosmetics.com/star_filled.png",
             rating: "599(1)",
             heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -302,6 +336,7 @@
             productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-beauty-stalker-everyday-pouch-navy-blue-28502129311827.jpg?v=1624894925",
             productName: "BEAUTY STALKER",
             price: "Rs.399",
+            priceToAdd: 399,
             star: "https://sugarcosmetics.com/star_filled.png",
             rating: "5(6)",
             heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -314,6 +349,7 @@
             productName: "SERIAL SIPPER WATER BOTTLE",
             star: "https://sugarcosmetics.com/star_filled.png",
             price: "Rs.799",
+            priceToAdd: 799,
             rating: "4.7(9)",
             heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
             select: "SELECT SHADE"

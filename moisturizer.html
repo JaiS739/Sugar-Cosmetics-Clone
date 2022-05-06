@@ -9,10 +9,14 @@
     <!-- <link rel="stylesheet" href="style.css"> -->
     <!-- <link rel="stylesheet" href="home.css" /> -->
     <link rel="stylesheet" href="css/moisturizer.css">
-
- 
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css"> 
 </head>
 <body>
+
+    <div id="header-container">
+      
+    </div>
     
     <!-- top part start -->
     <div id="top-part">
@@ -41,9 +45,12 @@
     <div id="productlist"></div>
    
   </div>
+
+  <div id="footer"></div>
 </body>
 </html>
-
+<script type="module" src="script/navbarjs.js"></script>
+<script type="module" src="script/footerjs.js"></script>
 <script>
     var productsDetails = [
     {
@@ -52,6 +59,7 @@
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/moisturiser.jpg?v=1626968292",
         productName: "AQUAHOLIC PRIMING MOISTURIZER",
         price: "Rs.499",
+        priceToAdd: 499,
         star: "https://sugarcosmetics.com/star_filled.png",
         rating: "4.8(127)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -63,6 +71,7 @@
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-citrus-got-real-daily-moisturizer-28038347292755.jpg?v=1619155748",
         productName: "CIRTUS REAL DAILY MOIST...",
         price: "Rs.499",
+        priceToAdd: 499,
         star: "https://sugarcosmetics.com/star_filled.png",
         rating: "4.9(34)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -75,6 +84,7 @@
         productName: "AQUAHOLIC HYDRATING STICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.899",
+        priceToAdd: 899,
         rating: "4.8(44)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "ADD TO CART"
@@ -86,6 +96,7 @@
         productName: "BLIND LEADER ILLUMINATING MO...",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.499",
+          priceToAdd: 499,
         rating: "4.7(130)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -98,6 +109,7 @@
         productName: "BLIND LEADER ILLUMINATING MO...",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.399",
+        priceToAdd: 399,
         rating: "4.5(120)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
