@@ -5,6 +5,7 @@ var productsDetails = [
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/01_59809bd6-49ef-4c6b-b262-47002bedc963.jpg?v=1639755559",
         productName: "BLEND THE RULES EYESHADOW...",
         price: "Rs.1199",
+        priceToAdd: 1199,
         star: "https://sugarcosmetics.com/star_filled.png",
         rating: "4.8(87)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -16,6 +17,7 @@ var productsDetails = [
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/01_d6ffec78-c2b6-4466-8672-233fee0285a8.jpg?v=1644394232",
         productName: "SMUDGE ME NOT LIP DUO",
         price: "Rs.599",
+        priceToAdd: 599,
         star: "https://sugarcosmetics.com/star_filled.png",
         rating: "4.5(31)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -27,7 +29,8 @@ var productsDetails = [
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-contour-de-force-mini-blush-01-peach-peak-soft-peach-pink-11020203884627.jpg?v=1619102626",
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
-        price: "Rs.599",
+        price: "Rs.499",
+        priceToAdd: 499,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -38,7 +41,8 @@ var productsDetails = [
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/1_6f55bcac-3e42-4253-88ee-cec0fa43c62a.jpg?v=1645608270",
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
-        price: "Rs.599",
+        price: "Rs.619",
+        priceToAdd: 619,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -49,7 +53,8 @@ var productsDetails = [
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/1_ef579f2e-602e-4d2f-bed2-bf0efdf4f184.jpg?v=1644325813",
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
-        price: "Rs.599",
+        price: "Rs.459",
+        priceToAdd: 459,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -61,6 +66,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -72,6 +78,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -83,6 +90,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -94,6 +102,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -105,6 +114,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -116,6 +126,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -127,6 +138,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -138,6 +150,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -149,6 +162,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -160,6 +174,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -171,6 +186,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -182,6 +198,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -193,6 +210,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -204,6 +222,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -215,6 +234,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -226,6 +246,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -237,6 +258,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -248,6 +270,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -259,6 +282,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -270,6 +294,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -281,6 +306,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -292,6 +318,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -303,6 +330,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -314,6 +342,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -325,6 +354,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -336,6 +366,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -347,6 +378,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -358,6 +390,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -369,6 +402,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -380,6 +414,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -391,6 +426,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -402,6 +438,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -413,6 +450,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -424,6 +462,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -435,6 +474,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -446,6 +486,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -457,6 +498,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -468,6 +510,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -479,6 +522,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -490,6 +534,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -501,6 +546,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -512,6 +558,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -523,6 +570,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -534,6 +582,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -545,6 +594,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -556,6 +606,7 @@ var productsDetails = [
         productName: "METTLE LIQUID LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.799",
+        priceToAdd: 799,
         rating: "4.9(59)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -567,16 +618,17 @@ var productsDetails = [
         productName: "POWER CLAY SPF20 BB CUSHION",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.699",
+        priceToAdd: 699,
         rating: "4.4(8)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
     }
 ];
 
-let countProd = JSON.parse(localStorage.getItem("count")) || 0;
+let countProd = JSON.parse(localStorage.getItem("Total_count")) || 0;
 let count = 0;
 
-let cartArr = JSON.parse(localStorage.getItem("prod")) || [];
+let cartArr = JSON.parse(localStorage.getItem("AddToCartProduct")) || [];
 productsDetails.forEach(function (el){
     let mainDiv = document.createElement("div");
     mainDiv.addEventListener("click",function(){
@@ -650,7 +702,7 @@ function addToCart(el){
     console.log(el);
     cartArr.push(el)
     countProd++;
-    localStorage.setItem("prod",JSON.stringify(cartArr));
-    localStorage.setItem("count",JSON.stringify(countProd));
-    window.location.href = "cart.html"
+    localStorage.setItem("AddToCartProduct",JSON.stringify(cartArr));
+    localStorage.setItem("Total_count",JSON.stringify(countProd));
+    window.location.href = "cart.html";
 }

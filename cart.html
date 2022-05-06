@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/24c494a6b6.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://www.beautybebo.com/pub/media/favicon/default/beauty-logopng_1.png"
+    /> -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css\cart.css">
+    <title>Cart Page</title>
+    <style>
+      
+      
+    </style>
+  </head>
+  <body>
+ 
+   
+
+    <h4>SHOPPING CART</h4>
+    <button id="btnScrollToTop">
+      <i class="material-icons">arrow_upward</i>
+    </button>
+
+    <div id="cartcontainer">
+      <div id="cartcontent">
+        <table>
+          <thead>
+            <div>
+              <tr id="tr">
+                <th id="item">ITEM</th>
+                <th id="qtyqty">QTY</th>
+                <th id="qtyqty2">SUBTOTAL</th>
+              </tr>
+            </div>
+          </thead>
+          <tbody>
+            <!-- append heere -->
+          </tbody>
+        </table>
+      </div>
+
+      <div id="cartprice">
+        <div id="innercartprice">
+          <h3>SUMMARY</h3>
+
+          <hr />
+          <div class="subtotal">
+            <div>Subtotal</div>
+            <div id="subtotalprice"></div>
+          </div>
+          <hr />
+          <div class="subtotal">
+            <div><b>Shipping</b>(Best Way - Max 7 Business <br />days)</div>
+            <div>₹0.00</div>
+          </div>
+          <hr />
+          <div class="subtotal">
+            <div>Price after Discount</div>
+            <div><input type="number" placeholder= "₹ 0.00" id="GST" /></div>
+          </div>
+          <hr />
+          <div class="input">
+            <label>Enter Discount Code</label>
+            <input
+              type="text"
+              id="discount_code"
+              placeholder="Enter Discount Code"
+            />
+          </div>
+          <button id="submit2">APPLY DISCOUNT</button>
+        </div>
+        <div id="checkoutbtn">
+          <button id="checkout">PROCEED TO CHECKOUT</button>
+        </div>
+      </div>
+    </div>
+ 
+   
+  </body>
+</html>
+
+<script src="script\cart.js">
+</script>
