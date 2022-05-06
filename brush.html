@@ -8,10 +8,14 @@
       Brush: Buy Brush products Online at Best Price | SUGAR Cosmetics
     </title>
     <link rel="stylesheet" href="css/brush.css" />
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
   </head>
   <body>
     <!--------------Header--------------->
-   
+    <div id="header-container">
+      
+    </div>
 
 
     <!--------------Header-end--------------->
@@ -22,7 +26,7 @@
         </a>
 
         <a class="home-img1" href="brush.html">/ Brush</a> -->
-      </div>
+   
       <div class="sort">
         <select id="priceSort" onchange="handlerPriceSort()">
           <option src="" value="">Sorting</option>
@@ -41,10 +45,14 @@
     </div>
     <div id="displayitem"></div>
     <div id="container-prod"></div>
+
+    <div id="footer"></div>
    
   </body>
 </html>
 <!-- <script type="text/javascript" src="brush.js"></script> -->
+<script type="module" src="script/navbarjs.js"></script>
+<script type="module" src="script/footerjs.js"></script>
 <script>
  var cart = document.querySelector("#cart");
 cart.addEventListener('click', function(){

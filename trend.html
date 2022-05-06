@@ -7,9 +7,15 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="css/trend.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/footer.css">
  
 </head>
 <body>
+
+    <div id="header-container">
+      
+    </div>
     <!-- top img start-->
     <!-- <div id="top-img">
         <img src="https://sugar-mobile-application.s3-ap-south-1.amazonaws.com/790c4f13-e58f-4bff-877a-c22d6d348364.jpg" alt="">
@@ -55,9 +61,12 @@
     </div>
     <!-- read more end -->
     <!-- <div id="footer"></div> -->
+    <div id="footer"></div>
+
 </body>
 </html>
-
+<script type="module" src="script/navbarjs.js"></script>
+<script type="module" src="script/footerjs.js"></script>
 <script>
     // Product List start
     var productsDetails = [
@@ -67,6 +76,7 @@
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/01_d6ffec78-c2b6-4466-8672-233fee0285a8.jpg?v=1644394232",
         productName: "MATTE AS HELL CRAYON",
         price: "Rs.799",
+         priceToAdd: 799,
         star: "https://sugarcosmetics.com/star_filled.png",
         rating: "4.8(843)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -78,6 +88,7 @@
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-contour-de-force-mini-blush-01-peach-peak-soft-peach-pink-11020203884627.jpg?v=1619102626",
         productName: "COUNTOUR DE FORCE MINI",
         price: "Rs.349",
+        priceToAdd: 349,
         star: "https://sugarcosmetics.com/star_filled.png",
         rating: "4.9(125)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -90,6 +101,7 @@
         productName: "MATTE ATTACK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.699",
+        priceToAdd: 699,
         rating: "4.7(314)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "CHOOSE PRODUCTS"
@@ -100,6 +112,7 @@
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/1_ef579f2e-602e-4d2f-bed2-bf0efdf4f184.jpg?v=1644325813",
         productName: "SMUDGE ME NOT LIQUID",
         price: "Rs.499",
+        priceToAdd: 499,
         star: "https://sugarcosmetics.com/star_filled.png",
         rating: "4.8(313)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -111,6 +124,7 @@
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/1_51afaa84-af89-42b5-bdb8-a51b01257bc0.jpg?v=1639582607",
         productName: "CONTOUR DE FORCE FACE",
         price: "Rs.799",
+        priceToAdd: 799,
         star: "https://sugarcosmetics.com/star_filled.png",
         rating: "4.7(266)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -123,6 +137,7 @@
         productName: "CONTOUR DE FORCE FACE",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.399",
+        priceToAdd: 399,
         rating: "4.7(58)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -133,6 +148,7 @@
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/1_df1e9403-ae9d-430c-8226-622d21c4743d.jpg?v=1640676422",
         productName: "ARCH ARRIVAL BROW",
         price: "Rs.499",
+        priceToAdd: 499,
         star: "https://sugarcosmetics.com/star_filled.png",
         rating: "4.8(135)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -144,6 +160,7 @@
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/AirKissPowderPoweredByImagesArtboard1.jpg?v=1644813116",
         productName: "AIR KISS POWER LIPSTICK",
         price: "Rs.499",
+        priceToAdd: 499,
         star: "https://sugarcosmetics.com/star_filled.png",
         rating: "5(1)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -156,6 +173,7 @@
         productName: "METTLE SATIN LIPSTICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.499",
+        priceToAdd: 499,
         rating: "4.9(79)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "CHOOSE PRODUCT"
@@ -166,6 +184,7 @@
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-matte-as-hell-crayon-lipstick-minis-set-28270316945491.jpg?v=1623073051",
         productName: "BASE OF GLORY PORE...",
         price: "Rs.799",
+        priceToAdd: 799,
         star: "https://sugarcosmetics.com/star_filled.png",
         rating: "4.8(228)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -177,6 +196,7 @@
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/Value-Set-WBG-1.jpg?v=1642089034",
         productName: "BEGINNERS MAKEUP ",
         price: "Rs.999",
+        priceToAdd: 999,
         star: " ",
         rating: " ",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -189,6 +209,7 @@
         productName: "BLEND THE RULES...",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.1199",
+        priceToAdd: 1199,
         rating: "4.8(87)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -199,6 +220,7 @@
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-time-to-shine-lip-gloss-13905851580499.jpg?v=1619116676",
         productName: "TIME TO SHINE LIP GLOSS",
         price: "Rs.499",
+        priceToAdd: 499,
         star: "https://sugarcosmetics.com/star_filled.png",
         rating: "4.5(49)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -210,6 +232,7 @@
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-mettle-matte-lipstick-01-athena-red-terracotta-13200497737811.jpg?v=1619110264",
         productName: "METTLE MATTE LIPSTICK",
         price: "Rs.1099",
+        priceToAdd: 1099,
         star: "https://sugarcosmetics.com/star_filled.png",
         rating: "4.8(24)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -222,6 +245,7 @@
         productName: "ACE OF FACE FOUNDATION",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.999",
+        priceToAdd: 999,
         rating: "4.8(458)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "CHOOSE PRODUCT"
@@ -232,6 +256,7 @@
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-lipping-on-the-edge-lip-liner-01-taffeta-terracotta-13278188568659.jpg?v=1619109027",
         productName: "LIPPING ON THE EDGE LIP",
         price: "Rs.499",
+        priceToAdd: 499,
         star: "https://sugarcosmetics.com/star_filled.png",
         rating: "4.8(50)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -243,6 +268,7 @@
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-it-s-a-pout-time-vivid-lipstick-01-the-big-bang-berry-wine-13204815937619.jpg?v=1619100487",
         productName: "IT'S A-POUT TIME! VIVID ....",
         price: "Rs.419",
+        priceToAdd: 419,
         star: "https://sugarcosmetics.com/star_filled.png",
         rating: "4.7(459)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -254,6 +280,7 @@
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-eye-warned-you-so-double-matte-eyeliner-01-black-swan-black-13954562654291.jpg?v=1619116881",
         productName: "EYE WARNED YOU SO!..",
         price: "Rs.699",
+        priceToAdd: 699,
         star: "https://sugarcosmetics.com/star_filled.png",
         rating: "4.8(51)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -265,6 +292,7 @@
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-contour-de-force-mini-blush-02-pink-pinnacle-deep-rose-12785043669075.jpg?v=1619102659",
         productName: "CONTOUR DE FORCE MINI..",
         price: "Rs.349",
+        priceToAdd: 349,
         star: "https://sugarcosmetics.com/star_filled.png",
         rating: "5(2)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -277,6 +305,7 @@
         productName: "FACE FWD >> BLUSH STICK",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.799",
+        priceToAdd: 799,
         rating: "4.9(21)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -287,6 +316,7 @@
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-drop-the-base-serum-foundation-10959991767123.jpg?v=1619107852",
         productName: "DROPE THE BASE SERUM ",
         price: "Rs.450",
+        priceToAdd: 450,
         star: "https://sugarcosmetics.com/star_filled.png",
         rating: "4.7(203)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -298,6 +328,7 @@
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/1_1da9dee5-9c2e-4135-994c-9b7d2ca23e6b.jpg?v=1641915296",
         productName: "NOTHING ELSE MATTER",
         price: "Rs.499",
+        priceToAdd: 499,
         star: "https://sugarcosmetics.com/star_filled.png",
         rating: "4.8(147)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -309,6 +340,7 @@
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-mettle-liquid-lipstick-01-lyra-cool-toned-plum-13200549380179.jpg?v=1619110238",
         productName: "METTLE LIQUID LIPSTICK",
         price: "Rs.599",
+        priceToAdd: 599,
         star: "https://sugarcosmetics.com/star_filled.png",
         rating: "4.9(70)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -320,6 +352,7 @@
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/1CREATIVEIMAGE01.jpg?v=1639496051",
         productName: "BORN TO WING GEL EYELINER",
         price: "Rs.599",
+        priceToAdd: 599,
         star: "https://sugarcosmetics.com/star_filled.png",
         rating: "4.7(118)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -331,6 +364,7 @@
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-dream-cover-spf15-mattifying-compact-10-latte-12775602356307.jpg?v=1619106501",
         productName: "DREAM COVER SPF15..",
         price: "Rs.499",
+        priceToAdd: 499,
         star: "https://sugarcosmetics.com/star_filled.png",
         rating: "4.7(183)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -343,6 +377,7 @@
         productName: "TWIST AND SHOUT...",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.399",
+        priceToAdd: 399,
         rating: "4.6(111)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "SELECT SHADE"
@@ -353,6 +388,7 @@
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-lash-mob-limitless-mascara-01-black-with-a-bang-black-12775589871699.jpg?v=1619100706",
         productName: "LASH MOB LIMITLESS",
         price: "Rs.799",
+        priceToAdd: 799,
         star: "https://sugarcosmetics.com/star_filled.png",
         rating: "4.7(32)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -364,6 +400,7 @@
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-goddess-of-flawless-spf30-bb-cream-07-vanilla-latte-fair-12796432941139.jpg?v=1619114695",
         productName: "GODDESSS OF FLAELESS",
         price: "Rs.699",
+        priceToAdd: 699,
         star: "https://sugarcosmetics.com/star_filled.png",
         rating: "4.7(100)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -376,6 +413,7 @@
         productName: "ALL SET TO GO BANANA",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.599",
+        priceToAdd: 599,
         rating: "4.8(104)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
         select: "CHOOSE PRODUCT"
@@ -386,6 +424,7 @@
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-limited-edition-nothing-else-matter-longwear-lipstick-15288678613075.jpg?v=1619115170",
         productName: "LIMITED EDITION",
         price: "Rs.599",
+        priceToAdd: 599,
         star: "https://sugarcosmetics.com/star_filled.png",
         rating: "4.9(19)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -397,6 +436,7 @@
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-gloss-boss-24hr-eyeliner-01-back-in-black-black-12771395436627_a805d7b4-0863-4ae0-9f15-a2292ae9aa93.jpg?v=1632210594",
         productName: "GLOSS BOSS 24HRS..",
         price: "Rs.499",
+        priceToAdd: 499,
         star: "https://sugarcosmetics.com/star_filled.png",
         rating: "4.8(9)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -408,6 +448,7 @@
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/1_aab4d2fb-22ff-4c06-b906-608c50c2cce5.jpg?v=1639582378",
         productName: "STROKE OF GENIUS..",
         price: "Rs.499",
+        priceToAdd: 499,
         star: "https://sugarcosmetics.com/star_filled.png",
         rating: "4.8(75)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -419,6 +460,7 @@
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-eye-told-you-so-smudgeproof-eyeliner-01-black-swan-black-13760408584275.jpg?v=1619116364",
         productName: "EYE TOLD YOU SO!",
         price: "Rs.699",
+        priceToAdd: 699,
         star: "https://sugarcosmetics.com/star_filled.png",
         rating: "4.7(31)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -430,6 +472,7 @@
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-set-the-tone-tinted-powder-10-latte-light-13444641390675.jpg?v=1619115262",
         productName: "SET THE TONE TINTED P....",
         price: "Rs.699",
+        priceToAdd: 699,
         star: "https://sugarcosmetics.com/star_filled.png",
         rating: "4.7(63)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -441,6 +484,7 @@
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-the-most-eligiblur-smoothing-primer-28122626162771.jpg?v=1619115330",
         productName: "THE MOST ELIGIBLUR",
         price: "Rs.799",
+        priceToAdd: 799,
         star: "https://sugarcosmetics.com/star_filled.png",
         rating: "4.8(35)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -452,6 +496,7 @@
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-plush-crush-creme-crayon-13974621519955.jpg?v=1619117067",
         productName: "PLUSH CRUSH CREME",
         price: "Rs.349",
+        priceToAdd: 349,
         star: "https://sugarcosmetics.com/star_filled.png",
         rating: "4.7(127)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -463,6 +508,7 @@
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-face-fwd-highlighter-stick-01-champagne-champion-champagne-gold-13825399652435.jpg?v=1619116634",
         productName: "FACE FWD",
         price: "Rs.799",
+        priceToAdd: 799,
         star: "https://sugarcosmetics.com/star_filled.png",
         rating: "4.7(24)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -474,6 +520,7 @@
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-seal-the-show-lip-primer-14162590433363.jpg?v=1619106825",
         productName: "SEAL THE SHOW LIP PRIMER",
         price: "Rs.599",
+        priceToAdd: 599,
         star: "https://sugarcosmetics.com/star_filled.png",
         rating: "4.6(60)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -485,6 +532,7 @@
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-face-fwd-corrector-stick-01-peach-precedent-peach-13825390542931.jpg?v=1619116625",
         productName: "FACE FWD >> CORRECTOR",
         price: "Rs.799",
+        priceToAdd: 799,
         star: "https://sugarcosmetics.com/star_filled.png",
         rating: "4.5(37)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -496,6 +544,7 @@
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-bling-leader-illuminating-moisturizer-13644982681683.jpg?v=1619115847",
         productName: "BLING LEADER",
         price: "Rs.499",
+        priceToAdd: 399,
         star: "https://sugarcosmetics.com/star_filled.png",
         rating: "4.7(130)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -507,6 +556,7 @@
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-arrested-for-overstay-waterproof-eyeliner-01-i-ll-be-black-black-12784884973651.jpg?v=1619101912",
         productName: "ARRESTED FOR OVERSTAY",
         price: "Rs.899",
+        priceToAdd: 899,
         star: "https://sugarcosmetics.com/star_filled.png",
         rating: "4.6(17)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -518,6 +568,7 @@
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-eye-dared-you-so-metallic-eyeliner-01-bronze-horseman-metallic-coppery-bronze-13272118165587.jpg?v=1619108841",
         productName: "EYE DARED YOU SO!",
         price: "Rs.349",
+        priceToAdd: 349,
         star: "https://sugarcosmetics.com/star_filled.png",
         rating: "4.6(62)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -529,6 +580,7 @@
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-never-say-dry-creme-lipstick-28122596769875.jpg?v=1619102140",
         productName: "NEVER SAY DRY CREAM LIQIUD",
         price: "Rs.250",
+        priceToAdd: 250,
         star: "https://sugarcosmetics.com/star_filled.png",
         rating: "4.5(13)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -540,6 +592,7 @@
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-uptown-curl-lengthening-mascara-01-black-beauty-black-28122637828179.jpg?v=1619106532",
         productName: "UPTOWN CURL",
         price: "Rs.499",
+        priceToAdd: 499,
         star: "https://sugarcosmetics.com/star_filled.png",
         rating: "4.7(68)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -551,6 +604,7 @@
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-eyes-and-shine-shadow-crayon-01-sapphire-sizzle-metallic-cobalt-blue-28128204095571.jpg?v=1619113401",
         productName: "EYES AND SHINE SHADOW",
         price: "Rs.300",
+        priceToAdd: 300,
         star: "https://sugarcosmetics.com/star_filled.png",
         rating: "4.7(54)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -560,6 +614,7 @@
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-magic-wand-waterproof-concealer-07-vanilla-latte-fair-golden-undertone-13278398611539.jpg?v=1619114712",
         productName: "MAGIC WAND..",
         price: "Rs.799",
+        priceToAdd: 799,
         star: "https://sugarcosmetics.com/star_filled.png",
         rating: "4.8(194)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -571,6 +626,7 @@
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-powder-play-translucent-compact-28122598932563.jpg?v=1619116304",
         productName: "POWDER PLAY",
         price: "Rs.599",
+        priceToAdd: 599,
         star: "https://sugarcosmetics.com/star_filled.png",
         rating: "4.7(26)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -582,6 +638,7 @@
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-face-fwd-corrector-stick-01-peach-precedent-peach-13825390542931.jpg?v=1619116625",
         productName: "FACE FWD >> CORRECTOR",
         price: "Rs.799",
+        priceToAdd: 799,
         star: "https://sugarcosmetics.com/star_filled.png",
         rating: "4.5(37)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
@@ -593,6 +650,7 @@
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-power-clay-spf20-bb-cushion-refill-05-blonde-latte-light-shade-with-neutral-undertone-14113836400723.jpg?v=1619117295",
         productName: "POWER CLAY SPF20 BB... ",
         price: "Rs.699",
+        priceToAdd: 699,
         star: "https://sugarcosmetics.com/star_filled.png",
         rating: "4.4(8)",
         heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
