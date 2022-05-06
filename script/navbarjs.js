@@ -10,7 +10,7 @@ var cart = document.querySelector("#cart");
  })
   var wishlist = document.querySelector("#wishlist");
  wishlist.addEventListener('click', function(){
-   window.location.href ="wishlist.html"
+   window.location.href ="index.html"
  })
   var discount = document.querySelector("#discount");
  discount.addEventListener('click', function(){
