@@ -39,7 +39,7 @@ let arr1 =[
         price1.innerText = price;
 
         let anchor = document.createElement("a");
-        anchor.href="#"
+        anchor.href="makeup.html"
 
         anchor.append(img1);
 
@@ -53,33 +53,33 @@ let arr1 =[
 
 let arr2 = [
     {
-        img : "https://cdn.shopify.com/s/files/1/0906/2558/products/1_c30a9b16-ef13-44c3-af41-04b227c62419.jpg?v=1642434141", name:"LIP ZIP MATTE TOPPER",
-        price:499,
+        productImg : "https://cdn.shopify.com/s/files/1/0906/2558/products/1_c30a9b16-ef13-44c3-af41-04b227c62419.jpg?v=1642434141", productName:"LIP ZIP MATTE TOPPER",
+        priceToAdd:499,
     },
     
     {
-        img : "https://cdn.shopify.com/s/files/1/0906/2558/products/01_d6ffec78-c2b6-4466-8672-233fee0285a8.jpg?v=1640791955", name:"MATTE AS HELL CRAYON LIPSTICK",
-        price:799,
+        productImg : "https://cdn.shopify.com/s/files/1/0906/2558/products/01_d6ffec78-c2b6-4466-8672-233fee0285a8.jpg?v=1640791955", productName:"MATTE AS HELL CRAYON LIPSTICK",
+        priceToAdd:799,
     },
 
     {
-        img : "https://cdn.shopify.com/s/files/1/0906/2558/products/01.jpg?v=1639496513", name:"KOHL OF HONOUR INTENSE KAJAL",
-        price:249,
+        productImg : "https://cdn.shopify.com/s/files/1/0906/2558/products/01.jpg?v=1639496513", productName:"KOHL OF HONOUR INTENSE KAJAL",
+        priceToAdd:249,
     },
 
     {
-        img : "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-tipsy-lips-moisturizing-balm-01-mojito-15057279877203.jpg?v=1619122412", name:"TIPSY LIPS MOISTURIZING BALM",
-        price:199,
+        productImg : "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-tipsy-lips-moisturizing-balm-01-mojito-15057279877203.jpg?v=1619122412", productName:"TIPSY LIPS MOISTURIZING BALM",
+        priceToAdd:199,
     },
 
     {
-        img : "https://cdn.shopify.com/s/files/1/0906/2558/products/1_51afaa84-af89-42b5-bdb8-a51b01257bc0.jpg?v=1639582607", name:"CONTOUR DE FORCE FACE PALETTE",
-        price:799,
+        productImg : "https://cdn.shopify.com/s/files/1/0906/2558/products/1_51afaa84-af89-42b5-bdb8-a51b01257bc0.jpg?v=1639582607", productName:"CONTOUR DE FORCE FACE PALETTE",
+        priceToAdd:799,
     },
 
     {
-        img : "https://cdn.shopify.com/s/files/1/0906/2558/products/1_529c20ee-c872-4029-9702-8580d7b9a66f.jpg?v=1639582652", name:"ACE OF FACE STICK",
-        price:999,
+        productImg : "https://cdn.shopify.com/s/files/1/0906/2558/products/1_529c20ee-c872-4029-9702-8580d7b9a66f.jpg?v=1639582652", productName:"ACE OF FACE STICK",
+        priceToAdd:999,
     },   
 ]    
 
@@ -87,21 +87,21 @@ let arr2 = [
 
 let BESTSELLERS = document.querySelector(".BESTSELLERS");
 
-    arr2.map(({img,name,price})=>{
+    arr2.map(({productImg,productName,priceToAdd})=>{
         let div2 = document.createElement("div");
         div2.className = "best_slide";     
 
         let img2 = document.createElement("img");
-        img2.src = img;
+        img2.src = productImg;
 
         let name2 = document.createElement("p");
-        name2.innerText = name;
+        name2.innerText = productName;
 
         let price2 = document.createElement("p");
-        price2.innerText = price;
+        price2.innerText = priceToAdd;
 
         let anchor2 = document.createElement("a"); 
-        anchor2.href="#";
+        anchor2.href="";
         
         let btn = document.createElement("button");
         btn.className = "addTOCart";
@@ -109,6 +109,13 @@ let BESTSELLERS = document.querySelector(".BESTSELLERS");
 
         let btnAnchor = document.createElement("a");
         btnAnchor.href="#";
+        btnAnchor.addEventListener("click",()=>{
+            let obj = {
+                productImg,productName,priceToAdd
+            }
+
+            addToCarts(obj);
+        })
 
         btnAnchor.append(btn)
 
@@ -119,7 +126,13 @@ let BESTSELLERS = document.querySelector(".BESTSELLERS");
         BESTSELLERS.append(div2);
     })
 
+    let cartArr = JSON.parse(localStorage.getItem("AddToCartProduct")) || [];
 
+    let addToCarts=(obj)=>{
+        cartArr.push(obj);
+        console.log(cartArr);
+        localStorage.setItem("AddToCartProduct",JSON.stringify(cartArr));
+    }
 
     // <!-- QUICK BEAUTY TIPS WITH SUGAR starts here -->
 
@@ -197,46 +210,46 @@ arr4.map(({img})=>{
 
 // SUPER SAVERS starts here
 
-
+// productImg,productName,priceToAdd
 let arr5 = [
     {
-        img : "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-mettle-satin-lipstick-01-sophie-bright-fuchsia-pink-fuchsia-13706264477779.jpg?v=1619116135", name:"METTLE SATIN LIPSTICK",
-        price:499,
+        productImg : "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-mettle-satin-lipstick-01-sophie-bright-fuchsia-pink-fuchsia-13706264477779.jpg?v=1619116135", productName:"METTLE SATIN LIPSTICK",
+        priceToAdd:499,
     },
     
     {
-        img : "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-eye-warned-you-so-double-matte-eyeliner-03-green-book-marsh-green-13954500100179.jpg?v=1619116854", name:"EYE WARNED YOU SO",
-        price:349,
+        productImg : "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-eye-warned-you-so-double-matte-eyeliner-03-green-book-marsh-green-13954500100179.jpg?v=1619116854", productName:"EYE WARNED YOU SO",
+        priceToAdd:349,
     },
 
     {
-        img : "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-smudge-me-not-lip-duo-12-don-fawn-yellow-brown-12788425097299.jpg?v=1619108497", name:"SMUDGE ME NOT LIP DUO",
-        price:299,
+        productImg : "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-smudge-me-not-lip-duo-12-don-fawn-yellow-brown-12788425097299.jpg?v=1619108497", productName:"SMUDGE ME NOT LIP DUO",
+        priceToAdd:299,
     },
 
     {
-        img : "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-it-s-a-pout-time-vivid-lipstick-09-better-call-salmon-peach-pink-12785014308947.jpg?v=1619101864", name:"ITS A POUT TIME",
-        price:299,
+        productImg : "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-it-s-a-pout-time-vivid-lipstick-09-better-call-salmon-peach-pink-12785014308947.jpg?v=1619101864", productName:"ITS A POUT TIME",
+        priceToAdd:299,
     },
 
     {
-        img : "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-smudge-me-not-liquid-lipstick-27-brown-crown-plum-brown-15384235180115.jpg?v=1619103565", name:"SMUDGE ME NOT LIQUID LIPSTICK",
+        productImg : "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-smudge-me-not-liquid-lipstick-27-brown-crown-plum-brown-15384235180115.jpg?v=1619103565", productName:"SMUDGE ME NOT LIQUID LIPSTICK",
         price:249,
     },
 
     {
-        img : "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-mettle-matte-lipstick-10-eirene-blue-toned-red-12796091236435.jpg?v=1619110221", name:"METTLE MATE LIPSTICK",
-        price:549,
+        productImg : "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-mettle-matte-lipstick-10-eirene-blue-toned-red-12796091236435.jpg?v=1619110221", productName:"METTLE MATE LIPSTICK",
+        priceToAdd:549,
     },   
 
     {
-        img : "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-dream-cover-spf15-mattifying-compact-55-americano-deep-12775603372115.jpg?v=1619106493", name:"DREAM COVER SPF15",
-        price:249,
+        productImg : "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-dream-cover-spf15-mattifying-compact-55-americano-deep-12775603372115.jpg?v=1619106493", productName:"DREAM COVER SPF15",
+        priceToAdd:249,
     },   
 
     {
-        img : "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-mettle-matte-lipstick-10-eirene-blue-toned-red-12796091236435.jpg?v=1619110221", name:"METTLE MATE LIPSTICK",
-        price:549,
+        productImg : "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-mettle-matte-lipstick-10-eirene-blue-toned-red-12796091236435.jpg?v=1619110221", productName:"METTLE MATE LIPSTICK",
+        priceToAdd:549,
     },   
 ]    
 
@@ -244,18 +257,18 @@ let arr5 = [
 
 let SUPER_SAVERS = document.querySelector(".SUPER_SAVERS");
 
-    arr5.map(({img,name,price})=>{
+    arr5.map(({productImg,productName,priceToAdd})=>{
         let div5 = document.createElement("div");
         div5.className = "super_slide";     
 
         let img5 = document.createElement("img");
-        img5.src = img;
+        img5.src = productImg;
 
         let name5 = document.createElement("p");
-        name5.innerText = name;
+        name5.innerText = productName;
 
         let price5 = document.createElement("p");
-        price5.innerText = price;
+        price5.innerText = priceToAdd;
 
         let anchor5 = document.createElement("a"); 
         anchor5.href="#";
@@ -263,6 +276,12 @@ let SUPER_SAVERS = document.querySelector(".SUPER_SAVERS");
         let btn = document.createElement("button");
         btn.className = "addTOCart_2";
         btn.innerText="Add To Cart";
+        btn.addEventListener("click",()=>{
+            let obj = {
+                productImg,productName,priceToAdd
+            }
+            addToCarts1(obj)
+        })
 
         let btnAnchor2 = document.createElement("a");
         btnAnchor2.href="#";
@@ -275,6 +294,14 @@ let SUPER_SAVERS = document.querySelector(".SUPER_SAVERS");
 
         SUPER_SAVERS.append(div5);
     })
+
+
+    let addToCarts1=(obj)=>{
+        cartArr.push(obj);
+        console.log(cartArr);
+        localStorage.setItem("AddToCartProduct",JSON.stringify(cartArr));
+    }
+
 
 
     // <!-- TOP PICKS OF THE WEEK starts here -->
@@ -311,46 +338,46 @@ arr6.map(({img})=>{
 
 
 // <!-- JUST-IN starts here -->
-
+// productImg,productName,priceToAdd
 let arr7 = [
     {
-        img : "https://cdn.shopify.com/s/files/1/0906/2558/products/390893522-eid-special-kit-wbg_1.jpg?v=1651238467", name:"EID SPECIAL KIT",
-        price:1499,
+        productImg : "https://cdn.shopify.com/s/files/1/0906/2558/products/390893522-eid-special-kit-wbg_1.jpg?v=1651238467", productName:"EID SPECIAL KIT",
+        priceToAdd:1499,
     },
     
     {
-        img : "https://cdn.shopify.com/s/files/1/0906/2558/products/1_cbc3a2d6-9266-467e-a973-017e3c65d5cf.jpg?v=1649433283", name:"SHINE & POUT MAKEUP VALUE",
-        price:999,
+        productImg : "https://cdn.shopify.com/s/files/1/0906/2558/products/1_cbc3a2d6-9266-467e-a973-017e3c65d5cf.jpg?v=1649433283", productName:"SHINE & POUT MAKEUP VALUE",
+        priceToAdd:999,
     },
 
     {
-        img : "https://cdn.shopify.com/s/files/1/0906/2558/products/383823136-launch-sweat-no-more-makeup-kit-wbg-images_11.jpg?v=1649132668", name:"SWEAT NO MORE MAKEUP",
-        price:2699,
+        productImg : "https://cdn.shopify.com/s/files/1/0906/2558/products/383823136-launch-sweat-no-more-makeup-kit-wbg-images_11.jpg?v=1649132668", productName:"SWEAT NO MORE MAKEUP",
+        priceToAdd:2699,
     },
 
     {
-        img : "https://cdn.shopify.com/s/files/1/0906/2558/products/382512089-mettle-priming-balm-01.jpg?v=1648654861", name:"METTLE PRIMING BALM",
-        price:1099,
+        productImg : "https://cdn.shopify.com/s/files/1/0906/2558/products/382512089-mettle-priming-balm-01.jpg?v=1648654861", productName:"METTLE PRIMING BALM",
+        priceToAdd:1099,
     },
 
     {
-        img : "https://cdn.shopify.com/s/files/1/0906/2558/products/1_6a5fa1af-0d0e-4e9e-85d1-579495fb5030.jpg?v=1648482145", name:"ACH ARRIVAL MICRO BROW PENCIL",
-        price:499,
+        productImg : "https://cdn.shopify.com/s/files/1/0906/2558/products/1_6a5fa1af-0d0e-4e9e-85d1-579495fb5030.jpg?v=1648482145", productName:"ACH ARRIVAL MICRO BROW PENCIL",
+        priceToAdd:499,
     },
 
     {
-        img : "https://cdn.shopify.com/s/files/1/0906/2558/products/383779802-summer-makeup-kit-wbg-images.jpg?v=1649078383", name:"SUMMER MAKEUP KIT",
-        price:1799,
+        productImg : "https://cdn.shopify.com/s/files/1/0906/2558/products/383779802-summer-makeup-kit-wbg-images.jpg?v=1649078383", productName:"SUMMER MAKEUP KIT",
+        priceToAdd:1799,
     },   
 
     {
-        img : "https://cdn.shopify.com/s/files/1/0906/2558/products/373532210-artboard-1.jpg?v=1646149967", name:"CITRUS GOT REAL RETINOL",
-        price:499,
+        productImg : "https://cdn.shopify.com/s/files/1/0906/2558/products/373532210-artboard-1.jpg?v=1646149967", productName:"CITRUS GOT REAL RETINOL",
+        priceToAdd:499,
     },   
 
     {
-        img : "https://cdn.shopify.com/s/files/1/0906/2558/products/373515742-01.jpg?v=1646207364", name:"SUGAR CITROUS GOT REAL BRIGHTENING",
-        price:599,
+        productImg : "https://cdn.shopify.com/s/files/1/0906/2558/products/373515742-01.jpg?v=1646207364", productName:"SUGAR CITROUS GOT REAL BRIGHTENING",
+        priceToAdd:599,
     },   
 ]    
 
@@ -358,18 +385,18 @@ let arr7 = [
 
 let JUST_IN = document.querySelector(".JUST_IN");
 
-    arr7.map(({img,name,price})=>{
+    arr7.map(({productImg,productName,priceToAdd})=>{
         let div7 = document.createElement("div");
         div7.className = "just_slide";     
 
         let img7 = document.createElement("img");
-        img7.src = img;
+        img7.src = productImg;
 
         let name7 = document.createElement("p");
-        name7.innerText = name;
+        name7.innerText = productName;
 
         let price7 = document.createElement("p");
-        price7.innerText = price;
+        price7.innerText = priceToAdd;
 
         let anchor7 = document.createElement("a"); 
         anchor7.href="#";
@@ -377,6 +404,13 @@ let JUST_IN = document.querySelector(".JUST_IN");
         let btn_3 = document.createElement("button");
         btn_3.className = "addTOCart_3";
         btn_3.innerText="Add To Cart";
+        btn_3.addEventListener("click",()=>{
+            let obj ={
+                productImg,productName,priceToAdd
+            }
+            addToCarts2(obj);
+
+        })
 
         let btnAnchor3 = document.createElement("a");
         btnAnchor3.href="#";
@@ -390,7 +424,11 @@ let JUST_IN = document.querySelector(".JUST_IN");
         JUST_IN.append(div7);
     })
 
-
+    let addToCarts2=(obj)=>{
+        cartArr.push(obj);
+        console.log(cartArr);
+        localStorage.setItem("AddToCartProduct",JSON.stringify(cartArr));
+    }
 
 
     // <!-- SUGAR BEAUTY BLOG starts here -->
