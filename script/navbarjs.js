@@ -6,7 +6,7 @@ n.innerHTML=navbar();
 
 var cart = document.querySelector("#cart");
  cart.addEventListener('click', function(){
-   window.location.href ="cartPage.html"
+   window.location.href ="cart.html"
  })
   var wishlist = document.querySelector("#wishlist");
  wishlist.addEventListener('click', function(){
@@ -55,7 +55,7 @@ document.querySelectorAll(".nav_link").addEventListener("mouseleave",function(){
 
 
 document.querySelector("#lips").addEventListener("click",()=>{
-window.location.href="lipstick.html"
+window.location.href="lips.html"
 })
 document.querySelector("#face").addEventListener("click",()=>{
 window.location.href="highliters.html"
@@ -64,19 +64,19 @@ document.querySelector("#kajal").addEventListener("click",()=>{
 window.location.href="kajal.html"
 })
 document.querySelector("#facebrushes").addEventListener("click",()=>{
-window.location.href="Face B.html"
+window.location.href="brush.html"
 })
 document.querySelector("#eyebrushes").addEventListener("click",()=>{
-window.location.href="Eyes B.html"
+window.location.href="brush.html"
 })
 document.querySelector("#featured").addEventListener("click",()=>{
-window.location.href="1featured.html"
+window.location.href="blog.html"
 })
 document.querySelector("#makeupblog").addEventListener("click",()=>{
-window.location.href="2makeup.html"
+window.location.href="blogMakeup.html"
 })
 document.querySelector("#skincareblog").addEventListener("click",()=>{
-window.location.href="3skincare.html"
+window.location.href="blog_Skin.html"
 })
 
 
@@ -109,5 +109,5 @@ window.location.href="makeupkits1.html"
 })
 
 document.querySelector("#SUGARMERCHSTATION").addEventListener("click",()=>{
-window.location.href="sugermerch1.html"
+window.location.href="sugermerch.html"
 })
