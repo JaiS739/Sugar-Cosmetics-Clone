@@ -60,6 +60,7 @@ else{
 	 setTimeout(()=>{
 		 alert("Hurray SignUp Sucessfull");
 	 },2000)
+	window.location.reload();
 	 console.log(details);
 }
 
