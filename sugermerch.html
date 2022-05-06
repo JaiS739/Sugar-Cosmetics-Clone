@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/trend.css">
+    >
+
+</head>
+
+<body>
+    <!-- top part start -->
+    <div id="top-part">
+
+        <div id="first">
+            <div> </div>
+            <div>
+                <img src="https://in.sugarcosmetics.com/desc-images/filterIcon.png" alt="">
+                <p>Filters</p>
+            </div>
+            <div>
+                <img src="https://in.sugarcosmetics.com/desc-images/sortIcon.png" alt="">
+                <p>Sort</p>
+            </div>
+        </div>
+
+        <div id="second">
+            <p>Merch Station<span style="color: #6C757D;">- <span></span> items</span></p>
+        </div>
+
+    </div>
+    <!-- top part end -->
+
+    <!-- products list start-->
+    <div id="productlist"></div>
+    <!-- products list end -->
+</body>
+
+</html>
+<script>
+    // Product List start
+    var productsDetails = [
+        {
+            number: "",
+            shadeImg: "",
+            productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-money-maker-envelope-wallet-grey-28490559979603.jpg?v=1624953191",
+            productName: "MONEY MAKER ENVELOPE",
+            price: "Rs.599",
+            star: "",
+            rating: "",
+            heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+            select: "CHOOSE PRODUCTS"
+        },
+        {
+            number: "",
+            shadeImg: "",
+            productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-glampacker-duffle-bag-28150649978963.jpg?v=1619156211",
+            productName: "GLAMPACKER DUFFLE BAG",
+            star: "https://sugarcosmetics.com/star_filled.png",
+            price: "Rs.999",
+            rating: "4.8(6)",
+            heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+            select: "CHOOSE PRODUCTS"
+        },
+        {
+            number: "",
+            shadeImg: "",
+            productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-tote-chic-canvas-carry-28477196927059.jpg?v=1624532788",
+            productName: "TOTE CHIC CANVAS CARRY",
+            price: "Rs.799",
+            star: "https://sugarcosmetics.com/star_filled.png",
+            rating: "5(1)",
+            heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+            select: "CHOOSE PRODUCTS"
+        },
+        {
+            number: "36",
+            shadeImg: "https://in.sugarcosmetics.com/ic_multiple_shades_opt2.png",
+            productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/D2C---Merch---Laptop-Sleeves_1.jpg?v=1625240618",
+            productName: "EASY PC LAPTOP SLEEVE",
+            price: "Rs.799",
+            star: "https://sugarcosmetics.com/star_filled.png",
+            rating: "5(1)",
+            heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+            select: "SELECT SHADE"
+        },
+        {
+            number: "17",
+            productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-holographic-signature-sugar-tee-white-extra-large-28516866588755.jpg?v=1629195790",
+            productName: "HOLOGRAPHIC..",
+            price: "Rs.799",
+            star: "",
+            rating: "",
+            heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+            select: "SELECT SHADE"
+        },
+        {
+            number: "52",
+            shadeImg: "https://in.sugarcosmetics.com/ic_multiple_shades_opt2.png",
+            productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-holographic-signature-sugar-tee-white-extra-large-28516866588755.jpg?v=1629195790",
+            productName: "HOLOGRAPHIC..",
+            price: "Rs.799",
+            star: "",
+            rating: "",
+            heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+            select: "SELECT SHADE"
+        },
+        {
+            number: "",
+            shadeImg: "",
+            productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/D2C---Merch---T-shirt_3_259d05d8-5ef3-487a-8c92-24b72f8fd8b1.jpg?v=1625240628",
+            productName: "HOLOGRAPHIC..",
+            price: "Rs.799",
+            star: "",
+            rating: "",
+            heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+            select: "CHOOSE PRODUCT"
+        },
+        {
+            number: "",
+            shadeImg: "",
+            productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/D2C---Merch---T-shirt_3_259d05d8-5ef3-487a-8c92-24b72f8fd8b1.jpg?v=1625240628",
+            productName: "HOLOGRAPHIC..",
+            price: "Rs.799",
+            star: "https://sugarcosmetics.com/star_filled.png",
+            rating: "5(1)",
+            heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+            select: "CHOOSE PRODUCT"
+        },
+        {
+            number: "",
+            shadeImg: "",
+            productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/D2C---Merch---T-shirt_3_259d05d8-5ef3-487a-8c92-24b72f8fd8b1.jpg?v=1625240628",
+            productName: "HOLOGRAPHIC..",
+            price: "Rs.799",
+            star: "",
+            rating: "",
+            heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+            select: "CHOOSE PRODUCT"
+        },
+        {
+            number: "",
+            shadeImg: "",
+            productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-holographic-signature-sugar-tee-white-small-28516880744531.jpg?v=1629284004",
+            productName: "HOLOGRAPHIC..",
+            price: "Rs.799",
+            star: "",
+            rating: "",
+            heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+            select: "CHOOSE PRODUCT"
+        },
+        {
+            number: "5",
+            shadeImg: "https://in.sugarcosmetics.com/ic_multiple_shades_opt2.png",
+            productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/Value-Set-WBG-1.jpg?v=1642089034",
+            productName: "BEGINNERS MAKEUP ",
+            price: "Rs.999",
+            star: " ",
+            rating: " ",
+            heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+            select: "SELECT SHADE"
+        },
+        {
+            number: "10",
+            shadeImg: "https://in.sugarcosmetics.com/ic_multiple_shades_opt2.png",
+            productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/D2C---Merch---T-shirt_3_259d05d8-5ef3-487a-8c92-24b72f8fd8b1.jpg?v=1625240628",
+            productName: "HOLOGRAPHIC..",
+            price: "Rs.799",
+            star: "",
+            rating: "",
+
+            heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+            select: "SELECT SHADE"
+        },
+        {
+            number: "10",
+            shadeImg: "https://in.sugarcosmetics.com/ic_multiple_shades_opt2.png",
+            productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-grip-trip-pop-socket-yellow-28150898917459.jpg?v=1619156246",
+            productName: "GRIP TRIP POP SOCKET....",
+            price: "Rs.99",
+            star: "",
+            rating: "",
+            heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+            select: "SELECT SHADE"
+        },
+        {
+            number: "10",
+            shadeImg: "https://in.sugarcosmetics.com/ic_multiple_shades_opt2.png",
+            productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-obsessive-compulsive-case-organizer-28508036235347.jpg?v=1624981425",
+            productName: "OBESSIVE COMPULSIVE..",
+            star: "https://sugarcosmetics.com/star_filled.png",
+            price: "Rs.599",
+            rating: "5(5)",
+            heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+            select: "SELECT SHADE"
+        },
+        {
+            number: "",
+            shadeImg: "",
+            productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-holographic-signature-sugar-tee-white-medium-28516852531283.jpg?v=1629195785",
+            productName: "HOLOGRAPHIC...",
+            price: "Rs.799",
+            star: "",
+            rating: "",
+            heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+            select: "CHOOSE PRODUCT"
+        },
+        {
+            number: "",
+            shadeImg: "",
+            productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-grip-trip-pop-socket-gradient-blue-28150851174483.jpg?v=1619156238",
+            productName: "GRIP TRIP POP STOCKET... ",
+            price: "Rs.99",
+            star: "https://sugarcosmetics.com/star_filled.png ",
+            rating: "5(1) ",
+            heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+            select: "CHOOSE PRODUCT"
+        },
+        {
+            number: "7",
+            shadeImg: "https://in.sugarcosmetics.com/ic_multiple_shades_opt2.png",
+            productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-grip-trip-pop-socket-orange-28150906978387.jpg?v=1619156248",
+            productName: "GRIP TRIP POP STOCKET... ",
+            price: "Rs.99",
+            star: "https://sugarcosmetics.com/star_filled.png ",
+            rating: "5(1) ",
+            heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+            select: "SELECT SHADE"
+        },
+        {
+            number: "",
+            shadeImg: "",
+            productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-grip-trip-pop-socket-gradient-purple-28150861889619.jpg?v=1619156240",
+            productName: "GRIP TRIP POP STOCKET... ",
+            price: "Rs.99",
+            star: "https://sugarcosmetics.com/star_filled.png ",
+            rating: "4.0(1) ",
+            heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+            select: "CHOOSE PRODUCT"
+        },
+        {
+            number: "",
+            shadeImg: "",
+            productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-chique-fleek-card-wallet-with-zipper-tan-28502091399251.jpg?v=1624894907",
+            productName: "CHIQUE FLEEK CARD",
+            star: "https://sugarcosmetics.com/star_filled.png",
+            price: "Rs.349",
+            rating: "5(1)",
+            heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+            select: "CHOOSE PRODUCT"
+        },
+        {
+            number: "10",
+            shadeImg: "https://in.sugarcosmetics.com/ic_multiple_shades_opt2.png",
+            productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-always-ahead-adjustable-cap-28516708352083.jpg?v=1625067752",
+            productName: "HIP STATEMENT WAIST PACK",
+            price: "Rs.699",
+            star: "https://sugarcosmetics.com/star_filled.png",
+            rating: "5(10)",
+            heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+            select: "SELECT SHADE"
+        },
+        {
+            number: "",
+            shadeImg: "",
+            productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-slim-feat-card-wallet-with-flap-grey-28490591043667.jpg?v=1624956771",
+            productName: "SLIM FEAT CARD WALLET",
+            price: "Rs.399",
+            star: "https://sugarcosmetics.com/star_filled.png",
+            rating: "5(3)",
+            heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+            select: "CHOOSE PRODUCT"
+        },
+        {
+            number: "",
+            shadeImg: "",
+            productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-grip-trip-pop-socket-pink-28150889709651.jpg?v=1619156245",
+            productName: "GRIP TRIP POP SOCKET",
+            star: "https://sugarcosmetics.com/star_filled.png",
+            price: "Rs.999",
+            rating: "4.3(6)",
+            heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+            select: "CHOOSE PRODUCT"
+        },
+        {
+            number: "20",
+            shadeImg: "https://in.sugarcosmetics.com/ic_multiple_shades_opt2.png",
+            productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-money-maker-envelope-wallet-black-28490557358163.jpg?v=1624954703",
+            productName: "MONEY MAKER ENVELOPE",
+            price: "Rs.599",
+            star: "https://sugarcosmetics.com/star_filled.png",
+            rating: "599(1)",
+            heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+            select: "SELECT SHADE"
+        },
+        {
+            number: "34",
+            shadeImg: "https://in.sugarcosmetics.com/ic_multiple_shades_opt2.png",
+            productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-beauty-stalker-everyday-pouch-navy-blue-28502129311827.jpg?v=1624894925",
+            productName: "BEAUTY STALKER",
+            price: "Rs.399",
+            star: "https://sugarcosmetics.com/star_filled.png",
+            rating: "5(6)",
+            heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+            select: "SELECT SHADE"
+        },
+        {
+            number: "12",
+            shadeImg: "https://in.sugarcosmetics.com/ic_multiple_shades_opt2.png",
+            productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-serial-sipper-watter-bottle-28150768205907.jpg?v=1619156231",
+            productName: "SERIAL SIPPER WATER BOTTLE",
+            star: "https://sugarcosmetics.com/star_filled.png",
+            price: "Rs.799",
+            rating: "4.7(9)",
+            heartImg: "https://cdn-icons-png.flaticon.com/128/833/833300.png",
+            select: "SELECT SHADE"
+        }
+
+    ];
+    // Product List end
+
+    var count = 0
+
+    productsDetails.map(function (elem) {
+
+        var mainDiv = document.createElement("div")
+        mainDiv.setAttribute("class", "container")
+        count++
+
+        var divForShade = document.createElement("div")
+        divForShade.setAttribute("class", "div_for_shade")
+        var numberOfShade = document.createElement("p")
+        numberOfShade.innerText = elem.number;
+        var shadeImg = document.createElement("img")
+        shadeImg.setAttribute("src", elem.shadeImg)
+        divForShade.append(numberOfShade, shadeImg)
+
+        var productImg = document.createElement("img")
+        productImg.setAttribute("src", elem.productImg)
+        productImg.setAttribute("class", "productImg")
+
+        var productName = document.createElement("h6")
+        productName.innerText = elem.productName
+        productName.setAttribute("class", "productName")
+
+        var price = document.createElement("p")
+        price.innerText = elem.price
+        price.setAttribute("class", "price")
+
+        var divForStar = document.createElement("div")
+        divForStar.style.display = "flex"
+        divForStar.style.backgroundColor = "#ffffff"
+        divForStar.style.justifyContent = "center"
+        var star = document.createElement("img")
+        star.setAttribute("src", elem.star)
+        star.style.height = "16px"
+        star.style.backgroundColor = "#ffffff"
+        var rating = document.createElement("p")
+        rating.innerText = elem.rating
+        rating.setAttribute("class", "rating")
+        divForStar.append(star, rating)
+
+        var divHover = document.createElement("div")
+        divHover.setAttribute("class", "div_hover")
+        var div_heart = document.createElement("div")
+        var heart = document.createElement("img")
+        heart.setAttribute("src", elem.heartImg)
+        div_heart.append(heart)
+        var div_select = document.createElement("div")
+        var select = document.createElement("p")
+        select.innerText = elem.select
+        div_select.append(select)
+        divHover.append(div_heart, div_select)
+
+        mainDiv.addEventListener("mouseover", function () {
+            divHover.style.display = "flex"
+        })
+
+        mainDiv.addEventListener("mouseleave", function () {
+            divHover.style.display = "none"
+        })
+
+        mainDiv.append(divForShade, productImg, productName, price, divForStar, divHover)
+
+        document.querySelector("#productlist").append(mainDiv)
+    })
+
+    document.querySelector("#second>p>span>span").innerText = count
+</script>
