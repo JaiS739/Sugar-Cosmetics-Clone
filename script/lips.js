@@ -14,8 +14,8 @@ var LipstickDetails = [
     {
         number: "",
         shadeImg: "",
-        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-smudge-me-not-minis-set-pink-14629810667603.jpg?v=1620652894",
-        productName: "SMUDGE ME NOT MINIS SET-PINK",
+        productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-matte-as-hell-crayon-lipstick-minis-set-28270316945491.jpg?v=1623073051",
+        productName: "MATTE AS HELL CRAYON L...",
         price: "Rs.799",
         priceToAdd: 799,
         star: "https://sugarcosmetics.com/star_filled.png",
