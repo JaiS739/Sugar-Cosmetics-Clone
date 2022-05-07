@@ -27,7 +27,7 @@ var productsDetails = [
         number: "12",
         shadeImg: "https://in.sugarcosmetics.com/ic_multiple_shades_opt2.png",
         productImg: "https://cdn.shopify.com/s/files/1/0906/2558/products/sugar-cosmetics-contour-de-force-mini-blush-01-peach-peak-soft-peach-pink-11020203884627.jpg?v=1619102626",
-        productName: "METTLE LIQUID LIPSTICK",
+        productName: "COUNTER DE FORCE MINI BLUSH",
         star: "https://sugarcosmetics.com/star_filled.png",
         price: "Rs.499",
         priceToAdd: 499,
