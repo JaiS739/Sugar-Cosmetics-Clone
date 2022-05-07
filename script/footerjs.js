@@ -33,7 +33,7 @@ div2img6.setAttribute("src","https://in.sugarcosmetics.com/desc-images/Youtube.s
 var div2img7 = document.createElement("img")
 div2img7.setAttribute("src","https://cdns.iconmonstr.com/wp-content/assets/preview/2012/240/iconmonstr-twitter-1.png");
 
-div2.append(div2img1,div2img2,div2img3,div2img4,div2img5,div2img6,div2img7)
+div2.append(div2img1,div2img2,div2img3,div2img4,div2img5,div2img6)
 
 var div3 = document.createElement("div")
 div3.setAttribute("id","div3")

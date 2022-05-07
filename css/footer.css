@@ -41,6 +41,7 @@
    display: flex;
    background-color: black;
    padding-left: 50px;
+   margin-left: 580px;
    
 }
 
@@ -60,19 +61,20 @@
    display: flex;
    background-color: black;
    padding-left: 50px;
+   
 }
 
 #div3>div:first-child{
-   justify-content: flex-start;
+   /* justify-content: flex-start; */
    background-color: black;
    padding-left: 50px;
 }
 
 #div3>div:last-child{
-   justify-content: flex-end;
-   margin-left: 330px;
+   /* justify-content: flex-end; */
+   margin-left: 500px;
    background-color: black;
-   padding-left: 50px;
+   /* padding-left: 50px; */
 }
 
 #div4{
@@ -83,6 +85,8 @@
    display: flex;
    background-color: black;
    padding-left: 50px;
+   justify-content: space-between;
+   margin-right: 50px;
 }
 
 #div4>input{
@@ -103,6 +107,9 @@
    height: 40px;
    border-radius: 7px;
    margin-top: 20px;
+   padding-left: 20px;
+   padding-right: 20px;
+   margin-left: 25px;
    
 }
 
@@ -110,27 +117,29 @@
    width: 206px;
    height: 48px;
    color: gray;
-   margin-left: 250px;
+   margin-left: 200px;
    margin-top: 7px;
    background-color: black;
-   padding-left: 50px;
+   
 }
 
 #div4>img:nth-child(4){
-   width: 99.88px;
+   width: 99.83px;
    height:30px ;
    margin-top: 4px;
    margin-right: 8px;
    background-color: black;
    padding-left: 50px;
+   margin-left: 130px;
 }
 
 #div4>img:nth-child(5){
-   width: 87.52px;
+   width: 87.58px;
    height:30px ;
    margin-top: 4px;
    background-color: black;
    padding-left: 50px;
+   margin-left: 50px;
 }
 
 #hr{
