@@ -90,7 +90,7 @@ let navbar = ()=>{
           </div>
         </li>
         <li>
-          <a href="blog_Skin.html" class="nav_link"> SKINCARE </a>
+          <a href="#" class="nav_link"> SKINCARE </a>
           <div class="dropdown-makeup">
             <ul>
               <li>
