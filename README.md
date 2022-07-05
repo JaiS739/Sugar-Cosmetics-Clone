@@ -3,7 +3,9 @@ It is Unit 3 Project
 Hi everyone,
 
 I am Jai Krishna Singh, I and my 5 colleagues Harshit Tripathi, Faizan Khan, Deepak Kumar Singh, MohdElyas Khan, and Hari Prasad cloned the Sugar Cosmetic website. I would like to thank Masai for giving us this opportunity.
-
+  <div>
+    <img align="center" alt="Coding" heigh="50" width="50%" src="https://cdn.dribbble.com/users/1162077/screenshots/3848914/programmer.gif" style="max-width: 100%>
+</div>
 Sugar Cosmetic Clone
 We started our project on 03 April 2022 and divided our work. Every one of us was very excited to make our project at Masai. I got my part where I have to create the homepage. First, when I started writing code I was like very comfortable as Swanand Kadam sir taught so many things in a very easy way that helped a lot during the “Construct Week”.
 
