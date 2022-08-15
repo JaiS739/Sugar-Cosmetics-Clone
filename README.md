@@ -1,6 +1,6 @@
 
 # Sugar cosmetic Clone
-Live Link:-  https://luxury-paletas-2febce.netlify.app/
+Live Link:-  <a>https://luxury-paletas-2febce.netlify.app/</a>
 
 This is project is clone of sugar cosmetic website which is a ladies cosmetic brand.
 
