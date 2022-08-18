@@ -4,7 +4,14 @@ Live Link:-  <a target="_blank" >https://luxury-paletas-2febce.netlify.app/</a>
 
 This is project is clone of sugar cosmetic website which is a ladies cosmetic brand.
 
+## Authors
 
+- [@JaiS739](https://github.com/JaiS739)
+- [@Harshitmax2022](https://github.com/Harshitmax2022)
+- [@MohdElyas19](https://github.com/MohdElyas19)
+- [@Dks-believer](https://github.com/Dks-believer)
+- [@Hari6360](https://github.com/Hari6360)
+- [@0786faizan](https://github.com/0786faizan)
 
 ## Documentation
 
