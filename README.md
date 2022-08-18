@@ -15,7 +15,7 @@ This is project is clone of sugar cosmetic website which is a ladies cosmetic br
 
 ## Documentation
 
-[Documentation](https://medium.com/@jksingh00739/sugar-cosmetics-851b92ca0953)
+[BLogs]([https://medium.com/@jksingh00739/sugar-cosmetics-851b92ca0953](https://medium.com/@jksingh00739/sugar-cosmetics-851b92ca0953))
 
 
 ## Features
